@@ -1,0 +1,14 @@
+ScamSentry AI — security patch notes
+
+1. Removed the predictable hardcoded demo passcode from the saved-cases UI.
+2. Production server now refuses to start if SCAMSENTRY_AUTH_TOKEN is missing.
+3. Local development without a configured token generates an unpredictable one-run passcode, printed only in the server terminal.
+4. Added production secret configuration guidance to .env.example and README.md.
+5. Prevented the app shell from requesting private saved cases before an investigator session exists; this removes the expected 401 request on initial page load.
+6. Prevented saved-case loading from issuing unauthorized requests before login.
+7. Explicitly marked workspace action/preset buttons as type="button" so they cannot accidentally submit a surrounding form.
+8. Fixed the test runner to expand test file paths in Node rather than using shell glob expansion; this addresses Windows paths containing spaces.
+
+Before deploying: configure SCAMSENTRY_AUTH_TOKEN in the hosting provider's server-side environment/secrets panel. Never put the real secret in frontend code, commit it to Git, or expose it in a public URL.
+
+Verification note: source changes were reviewed. Automated tests/build could not be completed in this Linux workspace because the uploaded node_modules contains Windows-only native binaries and dependency installation did not finish. On the target Windows machine, run npm install, npm run lint, npm test, and npm run build before deployment. Do not treat the build/test status as verified until those commands finish successfully.

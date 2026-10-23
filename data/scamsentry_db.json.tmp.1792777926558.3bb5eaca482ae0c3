@@ -1,0 +1,3718 @@
+{
+  "version": 1,
+  "lastMigration": "2026-10-23T15:27:40.042Z",
+  "cases": {
+    "INV-MVL4JO1E-CB4M": {
+      "id": "INV-MVL4JO1E-CB4M",
+      "createdAt": "2026-10-23T15:28:17.695Z",
+      "updatedAt": "2026-10-23T15:28:17.695Z",
+      "title": "[Amazon] Amazon Fraud Dept: Your Prime account ha...",
+      "messageText": "Amazon Fraud Dept: Your Prime account has been suspended due to an unauthorized charge of $1,299. Provide your 6-digit OTP passcode to cancel.",
+      "submittedUrl": "https://amazon.com.security-verify.click",
+      "claimedOrganization": "Amazon",
+      "riskLevel": "CRITICAL",
+      "riskScore": 100,
+      "evidenceStrength": "STRONG",
+      "assessment": {
+        "overallRiskLevel": "CRITICAL",
+        "riskScore": 100,
+        "scoringMethodology": "Composite Weighted Heuristic Index: Combines credential demand severity (weight 35), untrusted payment pressure (weight 30), domain deception (weight 30), direct IP/embedded credentials (weight 25), and psychological urgency indicators (weight 15). Note: This score is a qualitative diagnostic indicator, not an empirical guarantee.",
+        "evidenceStrength": "STRONG",
+        "uncertaintyLevel": "LOW",
+        "uncertaintyReason": "Multiple independent high-fidelity fraud indicators (such as credential harvesting, lookalike domains, or OTP theft) align concurrently.",
+        "supportingIndicators": [
+          "Demands sensitive authentication tokens or credentials (otp, passcode). Legitimate services never ask users to verbally or textually disclose OTPs.",
+          "Message invokes trust of 'Amazon'",
+          "URL 'amazon.com.security-verify.click' exhibits deceptive brand spoofing targeting 'Amazon'.",
+          "URL uses high-abuse top level domain."
+        ],
+        "contradictoryEvidence": [
+          "Legitimate services occasionally send one-time authentication codes or shipping notifications, but legitimate organizations never ask you to read back an OTP or pay fees through third-party money apps."
+        ],
+        "checksPerformed": [
+          "Message linguistic structure and urgent pressure analysis",
+          "Financial demand and unauthorized payment mechanism scan",
+          "Credential, OTP, and sensitive identity extraction scan",
+          "Impersonation indicator and claimed organization verification",
+          "RFC 3986 URL syntax and structural normalization",
+          "Lookalike domain, deceptive subdomain, and typosquatting detection",
+          "Direct IP address and embedded authentication credential scan",
+          "High-risk top-level domain abuse evaluation"
+        ],
+        "checksUnavailable": [
+          "Live telephone carrier caller ID spoofing verification (carrier telemetry unavailable)",
+          "Full email RFC 5322 DKIM/SPF/DMARC cryptographic validation (raw headers not provided)",
+          "Live bank account ownership and receiver KYC validation"
+        ],
+        "limitations": [
+          "Static syntactic analysis cannot inspect caller ID spoofing or email sender header metadata without raw headers.",
+          "Message text may have been truncated or modified prior to submission.",
+          "Scammers frequently modify phrasing to bypass keyword filters.",
+          "No system can guarantee that an unflagged message is 100% safe. Always verify independently through official known contacts."
+        ],
+        "recommendedCategory": "IMMEDIATE_AVOIDANCE"
+      },
+      "safetyPlan": {
+        "riskLevel": "CRITICAL",
+        "primaryDirective": "DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.",
+        "actionItems": [
+          {
+            "id": "act-1",
+            "type": "DO_NOT",
+            "title": "Never disclose One-Time Passwords (OTPs) or security PINs",
+            "description": "No legitimate customer service agent, recruiter, or banking security officer will ever ask you to read back a verification code sent to your phone or email.",
+            "priority": "URGENT"
+          },
+          {
+            "id": "act-2",
+            "type": "DO_NOT",
+            "title": "Do not transfer funds via non-reversible channels",
+            "description": "Refuse requests to pay for job training, background checks, equipment, parcel release fees, or taxes via gift cards, wire transfer, Zelle, Venmo, or cryptocurrency.",
+            "priority": "URGENT"
+          },
+          {
+            "id": "act-3",
+            "type": "VERIFICATION_STEP",
+            "title": "Independently verify with Amazon",
+            "description": "Open a new browser tab and navigate directly to the verified official portal of Amazon. Use published customer support numbers or career portal listings, never phone numbers or links provided inside the suspicious message.",
+            "priority": "HIGH"
+          },
+          {
+            "id": "act-4",
+            "type": "REMEDIATION_STEP",
+            "title": "Account compromise containment",
+            "description": "If you have already entered login details or financial info on a linked site, immediately navigate to your genuine account from a clean device, change your password, sign out all active sessions, and contact your bank to freeze impacted cards.",
+            "priority": "URGENT"
+          }
+        ],
+        "officialReportingPortals": [
+          {
+            "name": "FTC Report Fraud",
+            "jurisdiction": "United States (Federal Trade Commission)",
+            "url": "https://reportfraud.ftc.gov",
+            "purpose": "Official federal reporting for consumer scams, fake jobs, and impersonation."
+          },
+          {
+            "name": "FBI Internet Crime Complaint Center (IC3)",
+            "jurisdiction": "United States (Federal Bureau of Investigation)",
+            "url": "https://www.ic3.gov",
+            "purpose": "Reporting internet-facilitated crimes, wire fraud, ransomware, and identity theft."
+          },
+          {
+            "name": "Google Safe Browsing & Anti-Phishing",
+            "jurisdiction": "Global Web Protection",
+            "url": "https://safebrowsing.google.com/safebrowsing/report_phish/",
+            "purpose": "Flag malicious URLs for automated browser protection worldwide."
+          },
+          {
+            "name": "Anti-Phishing Working Group (APWG)",
+            "jurisdiction": "Global Cybersecurity Consortium",
+            "url": "https://apwg.org/reportphishing/",
+            "purpose": "Global clearinghouse for phishing URL analysis and takedown coordination."
+          }
+        ],
+        "disclaimer": "ScamSentry AI provides educational risk analysis and defensive guidance based on observable heuristics. We are not a law enforcement agency or legal counsel. If you have suffered financial loss, file an official police and IC3 report immediately."
+      },
+      "toolsExecuted": [
+        "analyze_message",
+        "inspect_url",
+        "assess_evidence",
+        "create_safety_plan",
+        "prepare_incident_report",
+        "save_investigation"
+      ],
+      "verificationHash": "304ff40b9cf473c9b31f2c4209b44480e7037ec4c0dc413e376e827df52b6375"
+    },
+    "INV-MVL65LRP-QM6P": {
+      "id": "INV-MVL65LRP-QM6P",
+      "createdAt": "2026-10-23T16:13:15.050Z",
+      "updatedAt": "2026-10-23T16:13:15.050Z",
+      "title": "[Amazon] Amazon HR: Congratulations! You are sele...",
+      "messageText": "Amazon HR: Congratulations! You are selected for Remote Assistant job at $45/hr. Pay $150 onboarding kit fee via Zelle to get started.",
+      "submittedUrl": "http://amazon-career-apply.info",
+      "claimedOrganization": "Amazon",
+      "riskLevel": "CRITICAL",
+      "riskScore": 95,
+      "evidenceStrength": "STRONG",
+      "assessment": {
+        "overallRiskLevel": "CRITICAL",
+        "riskScore": 95,
+        "scoringMethodology": "Composite Weighted Heuristic Index: Combines credential demand severity (weight 35), untrusted payment pressure (weight 30), domain deception (weight 30), direct IP/embedded credentials (weight 25), and psychological urgency indicators (weight 15). Note: This score is a qualitative diagnostic indicator, not an empirical guarantee.",
+        "evidenceStrength": "STRONG",
+        "uncertaintyLevel": "LOW",
+        "uncertaintyReason": "Multiple independent high-fidelity fraud indicators (such as credential harvesting, lookalike domains, or OTP theft) align concurrently.",
+        "supportingIndicators": [
+          "Requests non-standard or irreversible payment forms (zelle), a primary indicator of advance-fee or refund fraud.",
+          "Message invokes trust of 'Amazon'",
+          "URL 'amazon-career-apply.info' exhibits deceptive brand spoofing targeting 'Amazon'.",
+          "URL transmits unencrypted over insecure HTTP."
+        ],
+        "contradictoryEvidence": [
+          "Legitimate services occasionally send one-time authentication codes or shipping notifications, but legitimate organizations never ask you to read back an OTP or pay fees through third-party money apps."
+        ],
+        "checksPerformed": [
+          "Message linguistic structure and urgent pressure analysis",
+          "Financial demand and unauthorized payment mechanism scan",
+          "Credential, OTP, and sensitive identity extraction scan",
+          "Impersonation indicator and claimed organization verification",
+          "RFC 3986 URL syntax and structural normalization",
+          "Lookalike domain, deceptive subdomain, and typosquatting detection",
+          "Direct IP address and embedded authentication credential scan",
+          "High-risk top-level domain abuse evaluation"
+        ],
+        "checksUnavailable": [
+          "Live telephone carrier caller ID spoofing verification (carrier telemetry unavailable)",
+          "Full email RFC 5322 DKIM/SPF/DMARC cryptographic validation (raw headers not provided)",
+          "Live bank account ownership and receiver KYC validation"
+        ],
+        "limitations": [
+          "Static syntactic analysis cannot inspect caller ID spoofing or email sender header metadata without raw headers.",
+          "Message text may have been truncated or modified prior to submission.",
+          "Scammers frequently modify phrasing to bypass keyword filters.",
+          "No system can guarantee that an unflagged message is 100% safe. Always verify independently through official known contacts."
+        ],
+        "recommendedCategory": "IMMEDIATE_AVOIDANCE"
+      },
+      "safetyPlan": {
+        "riskLevel": "CRITICAL",
+        "primaryDirective": "DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.",
+        "actionItems": [
+          {
+            "id": "act-1",
+            "type": "DO_NOT",
+            "title": "Never disclose One-Time Passwords (OTPs) or security PINs",
+            "description": "No legitimate customer service agent, recruiter, or banking security officer will ever ask you to read back a verification code sent to your phone or email.",
+            "priority": "URGENT"
+          },
+          {
+            "id": "act-2",
+            "type": "DO_NOT",
+            "title": "Do not transfer funds via non-reversible channels",
+            "description": "Refuse requests to pay for job training, background checks, equipment, parcel release fees, or taxes via gift cards, wire transfer, Zelle, Venmo, or cryptocurrency.",
+            "priority": "URGENT"
+          },
+          {
+            "id": "act-3",
+            "type": "VERIFICATION_STEP",
+            "title": "Independently verify with Amazon",
+            "description": "Open a new browser tab and navigate directly to the verified official portal of Amazon. Use published customer support numbers or career portal listings, never phone numbers or links provided inside the suspicious message.",
+            "priority": "HIGH"
+          },
+          {
+            "id": "act-4",
+            "type": "REMEDIATION_STEP",
+            "title": "Account compromise containment",
+            "description": "If you have already entered login details or financial info on a linked site, immediately navigate to your genuine account from a clean device, change your password, sign out all active sessions, and contact your bank to freeze impacted cards.",
+            "priority": "URGENT"
+          }
+        ],
+        "officialReportingPortals": [
+          {
+            "name": "FTC Report Fraud",
+            "jurisdiction": "United States (Federal Trade Commission)",
+            "url": "https://reportfraud.ftc.gov",
+            "purpose": "Official federal reporting for consumer scams, fake jobs, and impersonation."
+          },
+          {
+            "name": "FBI Internet Crime Complaint Center (IC3)",
+            "jurisdiction": "United States (Federal Bureau of Investigation)",
+            "url": "https://www.ic3.gov",
+            "purpose": "Reporting internet-facilitated crimes, wire fraud, ransomware, and identity theft."
+          },
+          {
+            "name": "Google Safe Browsing & Anti-Phishing",
+            "jurisdiction": "Global Web Protection",
+            "url": "https://safebrowsing.google.com/safebrowsing/report_phish/",
+            "purpose": "Flag malicious URLs for automated browser protection worldwide."
+          },
+          {
+            "name": "Anti-Phishing Working Group (APWG)",
+            "jurisdiction": "Global Cybersecurity Consortium",
+            "url": "https://apwg.org/reportphishing/",
+            "purpose": "Global clearinghouse for phishing URL analysis and takedown coordination."
+          }
+        ],
+        "disclaimer": "ScamSentry AI provides educational risk analysis and defensive guidance based on observable heuristics. We are not a law enforcement agency or legal counsel. If you have suffered financial loss, file an official police and IC3 report immediately."
+      },
+      "toolsExecuted": [
+        "analyze_message",
+        "inspect_url",
+        "assess_evidence",
+        "create_safety_plan",
+        "prepare_incident_report",
+        "save_investigation"
+      ],
+      "verificationHash": "195a7573dd5da2bcdfe1e71315c8ad0832e41f463868d737f59cf97cbac7a5a0"
+    },
+    "INV-MVL6XC5L-JWY4": {
+      "id": "INV-MVL6XC5L-JWY4",
+      "createdAt": "2026-10-23T16:34:51.324Z",
+      "updatedAt": "2026-10-23T16:34:51.324Z",
+      "title": "Suspicious email offering $500 gift card...",
+      "messageText": "Suspicious email offering $500 gift card immediately",
+      "submittedUrl": null,
+      "claimedOrganization": null,
+      "riskLevel": "HIGH",
+      "riskScore": 50,
+      "evidenceStrength": "MODERATE",
+      "assessment": {
+        "overallRiskLevel": "HIGH",
+        "riskScore": 50,
+        "scoringMethodology": "Composite Weighted Heuristic Index: Combines credential demand severity (weight 35), untrusted payment pressure (weight 30), domain deception (weight 30), direct IP/embedded credentials (weight 25), and psychological urgency indicators (weight 15). Note: This score is a qualitative diagnostic indicator, not an empirical guarantee.",
+        "evidenceStrength": "MODERATE",
+        "uncertaintyLevel": "MODERATE",
+        "uncertaintyReason": "Static analysis evaluates observable linguistic and domain patterns. Without external verification of the sender’s private cryptographic keys or carrier headers, certainty cannot be absolute.",
+        "supportingIndicators": [
+          "Requests non-standard or irreversible payment forms (gift card), a primary indicator of advance-fee or refund fraud.",
+          "Uses psychological urgency/threat mechanisms (immediately), designed to suppress rational verification."
+        ],
+        "contradictoryEvidence": [
+          "No external hyperlinks or domains were present in the submitted text, reducing automated phishing delivery probability.",
+          "Legitimate services occasionally send one-time authentication codes or shipping notifications, but legitimate organizations never ask you to read back an OTP or pay fees through third-party money apps."
+        ],
+        "checksPerformed": [
+          "Message linguistic structure and urgent pressure analysis",
+          "Financial demand and unauthorized payment mechanism scan",
+          "Credential, OTP, and sensitive identity extraction scan",
+          "Impersonation indicator and claimed organization verification"
+        ],
+        "checksUnavailable": [
+          "Live telephone carrier caller ID spoofing verification (carrier telemetry unavailable)",
+          "Full email RFC 5322 DKIM/SPF/DMARC cryptographic validation (raw headers not provided)",
+          "Live bank account ownership and receiver KYC validation"
+        ],
+        "limitations": [
+          "Static syntactic analysis cannot inspect caller ID spoofing or email sender header metadata without raw headers.",
+          "Message text may have been truncated or modified prior to submission.",
+          "Scammers frequently modify phrasing to bypass keyword filters.",
+          "No system can guarantee that an unflagged message is 100% safe. Always verify independently through official known contacts."
+        ],
+        "recommendedCategory": "IMMEDIATE_AVOIDANCE"
+      },
+      "safetyPlan": {
+        "riskLevel": "HIGH",
+        "primaryDirective": "DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.",
+        "actionItems": [
+          {
+            "id": "act-1",
+            "type": "DO_NOT",
+            "title": "Never disclose One-Time Passwords (OTPs) or security PINs",
+            "description": "No legitimate customer service agent, recruiter, or banking security officer will ever ask you to read back a verification code sent to your phone or email.",
+            "priority": "URGENT"
+          },
+          {
+            "id": "act-2",
+            "type": "DO_NOT",
+            "title": "Do not transfer funds via non-reversible channels",
+            "description": "Refuse requests to pay for job training, background checks, equipment, parcel release fees, or taxes via gift cards, wire transfer, Zelle, Venmo, or cryptocurrency.",
+            "priority": "URGENT"
+          },
+          {
+            "id": "act-3",
+            "type": "VERIFICATION_STEP",
+            "title": "Independently verify with the organization",
+            "description": "Open a new browser tab and navigate directly to the verified official portal of the organization. Use published customer support numbers or career portal listings, never phone numbers or links provided inside the suspicious message.",
+            "priority": "HIGH"
+          }
+        ],
+        "officialReportingPortals": [
+          {
+            "name": "FTC Report Fraud",
+            "jurisdiction": "United States (Federal Trade Commission)",
+            "url": "https://reportfraud.ftc.gov",
+            "purpose": "Official federal reporting for consumer scams, fake jobs, and impersonation."
+          },
+          {
+            "name": "FBI Internet Crime Complaint Center (IC3)",
+            "jurisdiction": "United States (Federal Bureau of Investigation)",
+            "url": "https://www.ic3.gov",
+            "purpose": "Reporting internet-facilitated crimes, wire fraud, ransomware, and identity theft."
+          },
+          {
+            "name": "Google Safe Browsing & Anti-Phishing",
+            "jurisdiction": "Global Web Protection",
+            "url": "https://safebrowsing.google.com/safebrowsing/report_phish/",
+            "purpose": "Flag malicious URLs for automated browser protection worldwide."
+          },
+          {
+            "name": "Anti-Phishing Working Group (APWG)",
+            "jurisdiction": "Global Cybersecurity Consortium",
+            "url": "https://apwg.org/reportphishing/",
+            "purpose": "Global clearinghouse for phishing URL analysis and takedown coordination."
+          }
+        ],
+        "disclaimer": "ScamSentry AI provides educational risk analysis and defensive guidance based on observable heuristics. We are not a law enforcement agency or legal counsel. If you have suffered financial loss, file an official police and IC3 report immediately."
+      },
+      "toolsExecuted": [
+        "analyze_message",
+        "inspect_url",
+        "assess_evidence",
+        "create_safety_plan",
+        "prepare_incident_report",
+        "save_investigation"
+      ],
+      "verificationHash": "6ebaa83b8d8db86258ae680dd1a1304c1163d287f3bc10f47ccb111777af3347"
+    },
+    "CASE-MVL6XGTG-E244C3": {
+      "id": "CASE-MVL6XGTG-E244C3",
+      "createdAt": "2026-10-23T16:34:51.364Z",
+      "updatedAt": "2026-10-23T16:34:51.364Z",
+      "title": "Phishing test case via authorized MCP...",
+      "messageText": "Phishing test case via authorized MCP",
+      "submittedUrl": null,
+      "claimedOrganization": null,
+      "riskLevel": "HIGH",
+      "riskScore": 75,
+      "assessment": {
+        "overallRiskLevel": "HIGH"
+      },
+      "safetyPlan": {
+        "actionItems": []
+      },
+      "verificationHash": "cf11c97e8ed6a6478cf8f1a5ae73f0c59214820827664cbd0aa586f470389978"
+    },
+    "INV-MVL6YMN6-QD53": {
+      "id": "INV-MVL6YMN6-QD53",
+      "createdAt": "2026-10-23T16:35:51.573Z",
+      "updatedAt": "2026-10-23T16:35:51.573Z",
+      "title": "Suspicious email offering $500 gift card...",
+      "messageText": "Suspicious email offering $500 gift card immediately",
+      "submittedUrl": null,
+      "claimedOrganization": null,
+      "riskLevel": "HIGH",
+      "riskScore": 50,
+      "evidenceStrength": "MODERATE",
+      "assessment": {
+        "overallRiskLevel": "HIGH",
+        "riskScore": 50,
+        "scoringMethodology": "Composite Weighted Heuristic Index: Combines credential demand severity (weight 35), untrusted payment pressure (weight 30), domain deception (weight 30), direct IP/embedded credentials (weight 25), and psychological urgency indicators (weight 15). Note: This score is a qualitative diagnostic indicator, not an empirical guarantee.",
+        "evidenceStrength": "MODERATE",
+        "uncertaintyLevel": "MODERATE",
+        "uncertaintyReason": "Static analysis evaluates observable linguistic and domain patterns. Without external verification of the sender’s private cryptographic keys or carrier headers, certainty cannot be absolute.",
+        "supportingIndicators": [
+          "Requests non-standard or irreversible payment forms (gift card), a primary indicator of advance-fee or refund fraud.",
+          "Uses psychological urgency/threat mechanisms (immediately), designed to suppress rational verification."
+        ],
+        "contradictoryEvidence": [
+          "No external hyperlinks or domains were present in the submitted text, reducing automated phishing delivery probability.",
+          "Legitimate services occasionally send one-time authentication codes or shipping notifications, but legitimate organizations never ask you to read back an OTP or pay fees through third-party money apps."
+        ],
+        "checksPerformed": [
+          "Message linguistic structure and urgent pressure analysis",
+          "Financial demand and unauthorized payment mechanism scan",
+          "Credential, OTP, and sensitive identity extraction scan",
+          "Impersonation indicator and claimed organization verification"
+        ],
+        "checksUnavailable": [
+          "Live telephone carrier caller ID spoofing verification (carrier telemetry unavailable)",
+          "Full email RFC 5322 DKIM/SPF/DMARC cryptographic validation (raw headers not provided)",
+          "Live bank account ownership and receiver KYC validation"
+        ],
+        "limitations": [
+          "Static syntactic analysis cannot inspect caller ID spoofing or email sender header metadata without raw headers.",
+          "Message text may have been truncated or modified prior to submission.",
+          "Scammers frequently modify phrasing to bypass keyword filters.",
+          "No system can guarantee that an unflagged message is 100% safe. Always verify independently through official known contacts."
+        ],
+        "recommendedCategory": "IMMEDIATE_AVOIDANCE"
+      },
+      "safetyPlan": {
+        "riskLevel": "HIGH",
+        "primaryDirective": "DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.",
+        "actionItems": [
+          {
+            "id": "act-1",
+            "type": "DO_NOT",
+            "title": "Never disclose One-Time Passwords (OTPs) or security PINs",
+            "description": "No legitimate customer service agent, recruiter, or banking security officer will ever ask you to read back a verification code sent to your phone or email.",
+            "priority": "URGENT"
+          },
+          {
+            "id": "act-2",
+            "type": "DO_NOT",
+            "title": "Do not transfer funds via non-reversible channels",
+            "description": "Refuse requests to pay for job training, background checks, equipment, parcel release fees, or taxes via gift cards, wire transfer, Zelle, Venmo, or cryptocurrency.",
+            "priority": "URGENT"
+          },
+          {
+            "id": "act-3",
+            "type": "VERIFICATION_STEP",
+            "title": "Independently verify with the organization",
+            "description": "Open a new browser tab and navigate directly to the verified official portal of the organization. Use published customer support numbers or career portal listings, never phone numbers or links provided inside the suspicious message.",
+            "priority": "HIGH"
+          }
+        ],
+        "officialReportingPortals": [
+          {
+            "name": "FTC Report Fraud",
+            "jurisdiction": "United States (Federal Trade Commission)",
+            "url": "https://reportfraud.ftc.gov",
+            "purpose": "Official federal reporting for consumer scams, fake jobs, and impersonation."
+          },
+          {
+            "name": "FBI Internet Crime Complaint Center (IC3)",
+            "jurisdiction": "United States (Federal Bureau of Investigation)",
+            "url": "https://www.ic3.gov",
+            "purpose": "Reporting internet-facilitated crimes, wire fraud, ransomware, and identity theft."
+          },
+          {
+            "name": "Google Safe Browsing & Anti-Phishing",
+            "jurisdiction": "Global Web Protection",
+            "url": "https://safebrowsing.google.com/safebrowsing/report_phish/",
+            "purpose": "Flag malicious URLs for automated browser protection worldwide."
+          },
+          {
+            "name": "Anti-Phishing Working Group (APWG)",
+            "jurisdiction": "Global Cybersecurity Consortium",
+            "url": "https://apwg.org/reportphishing/",
+            "purpose": "Global clearinghouse for phishing URL analysis and takedown coordination."
+          }
+        ],
+        "disclaimer": "ScamSentry AI provides educational risk analysis and defensive guidance based on observable heuristics. We are not a law enforcement agency or legal counsel. If you have suffered financial loss, file an official police and IC3 report immediately."
+      },
+      "toolsExecuted": [
+        "analyze_message",
+        "inspect_url",
+        "assess_evidence",
+        "create_safety_plan",
+        "prepare_incident_report",
+        "save_investigation"
+      ],
+      "verificationHash": "abc7b5dd6d0c69ec30d03ec80810f875e2d29d55f6d2f0af7db39898b4f9d41b"
+    },
+    "CASE-MVL6YRBY-DF4BF7": {
+      "id": "CASE-MVL6YRBY-DF4BF7",
+      "createdAt": "2026-10-23T16:35:51.646Z",
+      "updatedAt": "2026-10-23T16:35:51.646Z",
+      "title": "Phishing test case via authorized MCP...",
+      "messageText": "Phishing test case via authorized MCP",
+      "submittedUrl": null,
+      "claimedOrganization": null,
+      "riskLevel": "HIGH",
+      "riskScore": 75,
+      "assessment": {
+        "overallRiskLevel": "HIGH"
+      },
+      "safetyPlan": {
+        "actionItems": []
+      },
+      "verificationHash": "0c11454544f7b5c077ee65600d732eb22b030e6dfc16f480fd13939f6048899f"
+    },
+    "INV-MVL6ZF4P-75CN": {
+      "id": "INV-MVL6ZF4P-75CN",
+      "createdAt": "2026-10-23T16:36:28.491Z",
+      "updatedAt": "2026-10-23T16:36:28.491Z",
+      "title": "Suspicious email offering $500 gift card...",
+      "messageText": "Suspicious email offering $500 gift card immediately",
+      "submittedUrl": null,
+      "claimedOrganization": null,
+      "riskLevel": "HIGH",
+      "riskScore": 50,
+      "evidenceStrength": "MODERATE",
+      "assessment": {
+        "overallRiskLevel": "HIGH",
+        "riskScore": 50,
+        "scoringMethodology": "Composite Weighted Heuristic Index: Combines credential demand severity (weight 35), untrusted payment pressure (weight 30), domain deception (weight 30), direct IP/embedded credentials (weight 25), and psychological urgency indicators (weight 15). Note: This score is a qualitative diagnostic indicator, not an empirical guarantee.",
+        "evidenceStrength": "MODERATE",
+        "uncertaintyLevel": "MODERATE",
+        "uncertaintyReason": "Static analysis evaluates observable linguistic and domain patterns. Without external verification of the sender’s private cryptographic keys or carrier headers, certainty cannot be absolute.",
+        "supportingIndicators": [
+          "Requests non-standard or irreversible payment forms (gift card), a primary indicator of advance-fee or refund fraud.",
+          "Uses psychological urgency/threat mechanisms (immediately), designed to suppress rational verification."
+        ],
+        "contradictoryEvidence": [
+          "No external hyperlinks or domains were present in the submitted text, reducing automated phishing delivery probability.",
+          "Legitimate services occasionally send one-time authentication codes or shipping notifications, but legitimate organizations never ask you to read back an OTP or pay fees through third-party money apps."
+        ],
+        "checksPerformed": [
+          "Message linguistic structure and urgent pressure analysis",
+          "Financial demand and unauthorized payment mechanism scan",
+          "Credential, OTP, and sensitive identity extraction scan",
+          "Impersonation indicator and claimed organization verification"
+        ],
+        "checksUnavailable": [
+          "Live telephone carrier caller ID spoofing verification (carrier telemetry unavailable)",
+          "Full email RFC 5322 DKIM/SPF/DMARC cryptographic validation (raw headers not provided)",
+          "Live bank account ownership and receiver KYC validation"
+        ],
+        "limitations": [
+          "Static syntactic analysis cannot inspect caller ID spoofing or email sender header metadata without raw headers.",
+          "Message text may have been truncated or modified prior to submission.",
+          "Scammers frequently modify phrasing to bypass keyword filters.",
+          "No system can guarantee that an unflagged message is 100% safe. Always verify independently through official known contacts."
+        ],
+        "recommendedCategory": "IMMEDIATE_AVOIDANCE"
+      },
+      "safetyPlan": {
+        "riskLevel": "HIGH",
+        "primaryDirective": "DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.",
+        "actionItems": [
+          {
+            "id": "act-1",
+            "type": "DO_NOT",
+            "title": "Never disclose One-Time Passwords (OTPs) or security PINs",
+            "description": "No legitimate customer service agent, recruiter, or banking security officer will ever ask you to read back a verification code sent to your phone or email.",
+            "priority": "URGENT"
+          },
+          {
+            "id": "act-2",
+            "type": "DO_NOT",
+            "title": "Do not transfer funds via non-reversible channels",
+            "description": "Refuse requests to pay for job training, background checks, equipment, parcel release fees, or taxes via gift cards, wire transfer, Zelle, Venmo, or cryptocurrency.",
+            "priority": "URGENT"
+          },
+          {
+            "id": "act-3",
+            "type": "VERIFICATION_STEP",
+            "title": "Independently verify with the organization",
+            "description": "Open a new browser tab and navigate directly to the verified official portal of the organization. Use published customer support numbers or career portal listings, never phone numbers or links provided inside the suspicious message.",
+            "priority": "HIGH"
+          }
+        ],
+        "officialReportingPortals": [
+          {
+            "name": "FTC Report Fraud",
+            "jurisdiction": "United States (Federal Trade Commission)",
+            "url": "https://reportfraud.ftc.gov",
+            "purpose": "Official federal reporting for consumer scams, fake jobs, and impersonation."
+          },
+          {
+            "name": "FBI Internet Crime Complaint Center (IC3)",
+            "jurisdiction": "United States (Federal Bureau of Investigation)",
+            "url": "https://www.ic3.gov",
+            "purpose": "Reporting internet-facilitated crimes, wire fraud, ransomware, and identity theft."
+          },
+          {
+            "name": "Google Safe Browsing & Anti-Phishing",
+            "jurisdiction": "Global Web Protection",
+            "url": "https://safebrowsing.google.com/safebrowsing/report_phish/",
+            "purpose": "Flag malicious URLs for automated browser protection worldwide."
+          },
+          {
+            "name": "Anti-Phishing Working Group (APWG)",
+            "jurisdiction": "Global Cybersecurity Consortium",
+            "url": "https://apwg.org/reportphishing/",
+            "purpose": "Global clearinghouse for phishing URL analysis and takedown coordination."
+          }
+        ],
+        "disclaimer": "ScamSentry AI provides educational risk analysis and defensive guidance based on observable heuristics. We are not a law enforcement agency or legal counsel. If you have suffered financial loss, file an official police and IC3 report immediately."
+      },
+      "toolsExecuted": [
+        "analyze_message",
+        "inspect_url",
+        "assess_evidence",
+        "create_safety_plan",
+        "prepare_incident_report",
+        "save_investigation"
+      ],
+      "verificationHash": "62c932351b9fc7c51c721f24f14d988bcd1072f30a4933a1bdb1922c56ff8b2d"
+    },
+    "CASE-MVL6ZJSH-E985FF": {
+      "id": "CASE-MVL6ZJSH-E985FF",
+      "createdAt": "2026-10-23T16:36:28.529Z",
+      "updatedAt": "2026-10-23T16:36:28.529Z",
+      "title": "Phishing test case via authorized MCP...",
+      "messageText": "Phishing test case via authorized MCP",
+      "submittedUrl": null,
+      "claimedOrganization": null,
+      "riskLevel": "HIGH",
+      "riskScore": 75,
+      "assessment": {
+        "overallRiskLevel": "HIGH"
+      },
+      "safetyPlan": {
+        "actionItems": []
+      },
+      "verificationHash": "72fee46d88ff6eabff21d76df83895279a10e1cbf814a1edd6335b6c2cf76658"
+    },
+    "CASE-MVL6ZKYF-A1EFC4": {
+      "id": "CASE-MVL6ZKYF-A1EFC4",
+      "createdAt": "2026-10-23T16:36:30.039Z",
+      "updatedAt": "2026-10-23T16:36:30.039Z",
+      "title": "Authorized test phishing alert...",
+      "messageText": "Authorized test phishing alert",
+      "submittedUrl": null,
+      "claimedOrganization": null,
+      "riskLevel": "CRITICAL",
+      "riskScore": 95,
+      "evidenceStrength": "MODERATE",
+      "assessment": {
+        "overallRiskLevel": "CRITICAL"
+      },
+      "safetyPlan": {
+        "actionItems": []
+      },
+      "toolsExecuted": [],
+      "verificationHash": "f371c6561e64bf13226903bfaf6cc7e3ab5c96eb48fd024304762b3d6ce88e41"
+    },
+    "INV-MVL71LTS-HT71": {
+      "id": "INV-MVL71LTS-HT71",
+      "createdAt": "2026-10-23T16:38:10.483Z",
+      "updatedAt": "2026-10-23T16:38:10.483Z",
+      "title": "Suspicious email offering $500 gift card...",
+      "messageText": "Suspicious email offering $500 gift card immediately",
+      "submittedUrl": null,
+      "claimedOrganization": null,
+      "riskLevel": "HIGH",
+      "riskScore": 50,
+      "evidenceStrength": "MODERATE",
+      "assessment": {
+        "overallRiskLevel": "HIGH",
+        "riskScore": 50,
+        "scoringMethodology": "Composite Weighted Heuristic Index: Combines credential demand severity (weight 35), untrusted payment pressure (weight 30), domain deception (weight 30), direct IP/embedded credentials (weight 25), and psychological urgency indicators (weight 15). Note: This score is a qualitative diagnostic indicator, not an empirical guarantee.",
+        "evidenceStrength": "MODERATE",
+        "uncertaintyLevel": "MODERATE",
+        "uncertaintyReason": "Static analysis evaluates observable linguistic and domain patterns. Without external verification of the sender’s private cryptographic keys or carrier headers, certainty cannot be absolute.",
+        "supportingIndicators": [
+          "Requests non-standard or irreversible payment forms (gift card), a primary indicator of advance-fee or refund fraud.",
+          "Uses psychological urgency/threat mechanisms (immediately), designed to suppress rational verification."
+        ],
+        "contradictoryEvidence": [
+          "No external hyperlinks or domains were present in the submitted text, reducing automated phishing delivery probability.",
+          "Legitimate services occasionally send one-time authentication codes or shipping notifications, but legitimate organizations never ask you to read back an OTP or pay fees through third-party money apps."
+        ],
+        "checksPerformed": [
+          "Message linguistic structure and urgent pressure analysis",
+          "Financial demand and unauthorized payment mechanism scan",
+          "Credential, OTP, and sensitive identity extraction scan",
+          "Impersonation indicator and claimed organization verification"
+        ],
+        "checksUnavailable": [
+          "Live telephone carrier caller ID spoofing verification (carrier telemetry unavailable)",
+          "Full email RFC 5322 DKIM/SPF/DMARC cryptographic validation (raw headers not provided)",
+          "Live bank account ownership and receiver KYC validation"
+        ],
+        "limitations": [
+          "Static syntactic analysis cannot inspect caller ID spoofing or email sender header metadata without raw headers.",
+          "Message text may have been truncated or modified prior to submission.",
+          "Scammers frequently modify phrasing to bypass keyword filters.",
+          "No system can guarantee that an unflagged message is 100% safe. Always verify independently through official known contacts."
+        ],
+        "recommendedCategory": "IMMEDIATE_AVOIDANCE"
+      },
+      "safetyPlan": {
+        "riskLevel": "HIGH",
+        "primaryDirective": "DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.",
+        "actionItems": [
+          {
+            "id": "act-1",
+            "type": "DO_NOT",
+            "title": "Never disclose One-Time Passwords (OTPs) or security PINs",
+            "description": "No legitimate customer service agent, recruiter, or banking security officer will ever ask you to read back a verification code sent to your phone or email.",
+            "priority": "URGENT"
+          },
+          {
+            "id": "act-2",
+            "type": "DO_NOT",
+            "title": "Do not transfer funds via non-reversible channels",
+            "description": "Refuse requests to pay for job training, background checks, equipment, parcel release fees, or taxes via gift cards, wire transfer, Zelle, Venmo, or cryptocurrency.",
+            "priority": "URGENT"
+          },
+          {
+            "id": "act-3",
+            "type": "VERIFICATION_STEP",
+            "title": "Independently verify with the organization",
+            "description": "Open a new browser tab and navigate directly to the verified official portal of the organization. Use published customer support numbers or career portal listings, never phone numbers or links provided inside the suspicious message.",
+            "priority": "HIGH"
+          }
+        ],
+        "officialReportingPortals": [
+          {
+            "name": "FTC Report Fraud",
+            "jurisdiction": "United States (Federal Trade Commission)",
+            "url": "https://reportfraud.ftc.gov",
+            "purpose": "Official federal reporting for consumer scams, fake jobs, and impersonation."
+          },
+          {
+            "name": "FBI Internet Crime Complaint Center (IC3)",
+            "jurisdiction": "United States (Federal Bureau of Investigation)",
+            "url": "https://www.ic3.gov",
+            "purpose": "Reporting internet-facilitated crimes, wire fraud, ransomware, and identity theft."
+          },
+          {
+            "name": "Google Safe Browsing & Anti-Phishing",
+            "jurisdiction": "Global Web Protection",
+            "url": "https://safebrowsing.google.com/safebrowsing/report_phish/",
+            "purpose": "Flag malicious URLs for automated browser protection worldwide."
+          },
+          {
+            "name": "Anti-Phishing Working Group (APWG)",
+            "jurisdiction": "Global Cybersecurity Consortium",
+            "url": "https://apwg.org/reportphishing/",
+            "purpose": "Global clearinghouse for phishing URL analysis and takedown coordination."
+          }
+        ],
+        "disclaimer": "ScamSentry AI provides educational risk analysis and defensive guidance based on observable heuristics. We are not a law enforcement agency or legal counsel. If you have suffered financial loss, file an official police and IC3 report immediately."
+      },
+      "toolsExecuted": [
+        "analyze_message",
+        "inspect_url",
+        "assess_evidence",
+        "create_safety_plan",
+        "prepare_incident_report",
+        "save_investigation"
+      ],
+      "verificationHash": "6f7e3283876631e3cf9bfe8577e83f4fb5f1d6705c562c09de77133ee005f66c"
+    },
+    "CASE-MVL71QHR-464C1B": {
+      "id": "CASE-MVL71QHR-464C1B",
+      "createdAt": "2026-10-23T16:38:10.527Z",
+      "updatedAt": "2026-10-23T16:38:10.527Z",
+      "title": "Phishing test case via authorized MCP...",
+      "messageText": "Phishing test case via authorized MCP",
+      "submittedUrl": null,
+      "claimedOrganization": null,
+      "riskLevel": "HIGH",
+      "riskScore": 75,
+      "assessment": {
+        "overallRiskLevel": "HIGH"
+      },
+      "safetyPlan": {
+        "actionItems": []
+      },
+      "verificationHash": "dd4c4fe5d6303772e5868e7bb4566ccb6c3581f778662b5f9342fb5824ea99d2"
+    },
+    "CASE-MVL71RFK-D615B7": {
+      "id": "CASE-MVL71RFK-D615B7",
+      "createdAt": "2026-10-23T16:38:11.744Z",
+      "updatedAt": "2026-10-23T16:38:11.744Z",
+      "title": "Authorized test phishing alert...",
+      "messageText": "Authorized test phishing alert",
+      "submittedUrl": null,
+      "claimedOrganization": null,
+      "riskLevel": "CRITICAL",
+      "riskScore": 95,
+      "evidenceStrength": "MODERATE",
+      "assessment": {
+        "overallRiskLevel": "CRITICAL"
+      },
+      "safetyPlan": {
+        "actionItems": []
+      },
+      "toolsExecuted": [],
+      "verificationHash": "7326e99146ab86dc822eb2d9b2e927eceb440c80b7288726f066cfe45c7304b8"
+    }
+  },
+  "auditLogs": [
+    {
+      "id": "AUD-1792777926483-ff1fb3",
+      "timestamp": "2026-10-23T17:52:06.483Z",
+      "caseId": "CASE-CONCURRENT-9-1792777926477",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-9-1792777926477'"
+    },
+    {
+      "id": "AUD-1792777926483-c98a2d",
+      "timestamp": "2026-10-23T17:52:06.483Z",
+      "caseId": "CASE-CONCURRENT-8-1792777926477",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-8-1792777926477'"
+    },
+    {
+      "id": "AUD-1792777926483-00a86c",
+      "timestamp": "2026-10-23T17:52:06.483Z",
+      "caseId": "CASE-CONCURRENT-7-1792777926477",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-7-1792777926477'"
+    },
+    {
+      "id": "AUD-1792777926483-f03374",
+      "timestamp": "2026-10-23T17:52:06.483Z",
+      "caseId": "CASE-CONCURRENT-6-1792777926477",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-6-1792777926477'"
+    },
+    {
+      "id": "AUD-1792777926483-a59df2",
+      "timestamp": "2026-10-23T17:52:06.483Z",
+      "caseId": "CASE-CONCURRENT-5-1792777926477",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-5-1792777926477'"
+    },
+    {
+      "id": "AUD-1792777926483-35e0ad",
+      "timestamp": "2026-10-23T17:52:06.483Z",
+      "caseId": "CASE-CONCURRENT-4-1792777926476",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-4-1792777926476'"
+    },
+    {
+      "id": "AUD-1792777926483-67f547",
+      "timestamp": "2026-10-23T17:52:06.483Z",
+      "caseId": "CASE-CONCURRENT-3-1792777926476",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-3-1792777926476'"
+    },
+    {
+      "id": "AUD-1792777926483-ea26bb",
+      "timestamp": "2026-10-23T17:52:06.483Z",
+      "caseId": "CASE-CONCURRENT-2-1792777926476",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-2-1792777926476'"
+    },
+    {
+      "id": "AUD-1792777926483-dc2893",
+      "timestamp": "2026-10-23T17:52:06.483Z",
+      "caseId": "CASE-CONCURRENT-1-1792777926476",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-1-1792777926476'"
+    },
+    {
+      "id": "AUD-1792777926483-9bf8f9",
+      "timestamp": "2026-10-23T17:52:06.483Z",
+      "caseId": "CASE-CONCURRENT-0-1792777926472",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-0-1792777926472'"
+    },
+    {
+      "id": "AUD-1792777926477-335aeb",
+      "timestamp": "2026-10-23T17:52:06.477Z",
+      "caseId": "CASE-CONCURRENT-9-1792777926477",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-9-1792777926477' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792777926477-b6a73a",
+      "timestamp": "2026-10-23T17:52:06.477Z",
+      "caseId": "CASE-CONCURRENT-8-1792777926477",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-8-1792777926477' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792777926477-21534e",
+      "timestamp": "2026-10-23T17:52:06.477Z",
+      "caseId": "CASE-CONCURRENT-7-1792777926477",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-7-1792777926477' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792777926477-c53f5d",
+      "timestamp": "2026-10-23T17:52:06.477Z",
+      "caseId": "CASE-CONCURRENT-6-1792777926477",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-6-1792777926477' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792777926477-6809bf",
+      "timestamp": "2026-10-23T17:52:06.477Z",
+      "caseId": "CASE-CONCURRENT-5-1792777926477",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-5-1792777926477' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792777926477-ba780f",
+      "timestamp": "2026-10-23T17:52:06.477Z",
+      "caseId": "CASE-CONCURRENT-4-1792777926476",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-4-1792777926476' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792777926476-eb36bf",
+      "timestamp": "2026-10-23T17:52:06.476Z",
+      "caseId": "CASE-CONCURRENT-3-1792777926476",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-3-1792777926476' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792777926476-5cf42c",
+      "timestamp": "2026-10-23T17:52:06.476Z",
+      "caseId": "CASE-CONCURRENT-2-1792777926476",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-2-1792777926476' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792777926476-927231",
+      "timestamp": "2026-10-23T17:52:06.476Z",
+      "caseId": "CASE-CONCURRENT-1-1792777926476",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-1-1792777926476' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792777926473-d15289",
+      "timestamp": "2026-10-23T17:52:06.476Z",
+      "caseId": "CASE-CONCURRENT-0-1792777926472",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-0-1792777926472' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792777924994-f170a2",
+      "timestamp": "2026-10-23T17:52:04.994Z",
+      "caseId": "CASE-TEST-1792777924969",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-TEST-1792777924969'"
+    },
+    {
+      "id": "AUD-1792777924975-cac03c",
+      "timestamp": "2026-10-23T17:52:04.978Z",
+      "caseId": "CASE-TEST-1792777924969",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-TEST-1792777924969' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792776626161-872275",
+      "timestamp": "2026-10-23T17:30:26.161Z",
+      "caseId": "INV-MVL8WXYN-WOII",
+      "toolName": "verify_action",
+      "action": "Ephemeral Report Verification",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Verified in-memory forensic report integrity (ephemeral mode - private data not written to shared database)."
+    },
+    {
+      "id": "AUD-1792776626161-959e69",
+      "timestamp": "2026-10-23T17:30:26.161Z",
+      "caseId": "INV-MVL8WXYN-WOII",
+      "toolName": "prepare_incident_report",
+      "action": "Incident Report Compilation",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Compiled incident report REP-MVL8WXYP-8UP0 with full XSS escaping and export capabilities"
+    },
+    {
+      "id": "AUD-1792776626161-af2a2a",
+      "timestamp": "2026-10-23T17:30:26.161Z",
+      "caseId": "INV-MVL8WXYN-WOII",
+      "toolName": "create_safety_plan",
+      "action": "Defensive Guidance & Action Planning",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Generated directive: \"DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.\" with 4 prioritized action items and 4 reporting endpoints"
+    },
+    {
+      "id": "AUD-1792776626161-3c1b3f",
+      "timestamp": "2026-10-23T17:30:26.161Z",
+      "caseId": "INV-MVL8WXYN-WOII",
+      "toolName": "assess_evidence",
+      "action": "Evidence Synthesis & Risk Assessment",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Calculated Risk: HIGH (Score: 60/100, Evidence: MODERATE, Uncertainty: MODERATE)"
+    },
+    {
+      "id": "AUD-1792776626160-2afb7e",
+      "timestamp": "2026-10-23T17:30:26.160Z",
+      "caseId": "INV-MVL8WXYN-WOII",
+      "toolName": "analyze_message",
+      "action": "Linguistic & Entity Extraction",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Extracted 0 URLs, 0 payment keywords, 1 credential tokens (Engine: Deterministic Heuristic)"
+    },
+    {
+      "id": "AUD-1792776416040-f0ad00",
+      "timestamp": "2026-10-23T17:26:56.040Z",
+      "caseId": "INV-MVL8SFTX-OJUU",
+      "toolName": "verify_action",
+      "action": "Ephemeral Report Verification",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Verified in-memory forensic report integrity (ephemeral mode - private data not written to shared database)."
+    },
+    {
+      "id": "AUD-1792776416040-efbc92",
+      "timestamp": "2026-10-23T17:26:56.040Z",
+      "caseId": "INV-MVL8SFTX-OJUU",
+      "toolName": "prepare_incident_report",
+      "action": "Incident Report Compilation",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Compiled incident report REP-MVL8SFTZ-02B6 with full XSS escaping and export capabilities"
+    },
+    {
+      "id": "AUD-1792776416039-a123da",
+      "timestamp": "2026-10-23T17:26:56.039Z",
+      "caseId": "INV-MVL8SFTX-OJUU",
+      "toolName": "create_safety_plan",
+      "action": "Defensive Guidance & Action Planning",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Generated directive: \"DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.\" with 4 prioritized action items and 4 reporting endpoints"
+    },
+    {
+      "id": "AUD-1792776416039-c40a9c",
+      "timestamp": "2026-10-23T17:26:56.039Z",
+      "caseId": "INV-MVL8SFTX-OJUU",
+      "toolName": "assess_evidence",
+      "action": "Evidence Synthesis & Risk Assessment",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Calculated Risk: HIGH (Score: 60/100, Evidence: MODERATE, Uncertainty: MODERATE)"
+    },
+    {
+      "id": "AUD-1792776416038-db8d8e",
+      "timestamp": "2026-10-23T17:26:56.038Z",
+      "caseId": "INV-MVL8SFTX-OJUU",
+      "toolName": "analyze_message",
+      "action": "Linguistic & Entity Extraction",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Extracted 0 URLs, 0 payment keywords, 1 credential tokens (Engine: Deterministic Heuristic)"
+    },
+    {
+      "id": "AUD-1792776290777-6f833a",
+      "timestamp": "2026-10-23T17:24:50.777Z",
+      "caseId": "INV-MVL8PR6G-WXZD",
+      "toolName": "verify_action",
+      "action": "Ephemeral Report Verification",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Verified in-memory forensic report integrity (ephemeral mode - private data not written to shared database)."
+    },
+    {
+      "id": "AUD-1792776290777-490a9a",
+      "timestamp": "2026-10-23T17:24:50.777Z",
+      "caseId": "INV-MVL8PR6G-WXZD",
+      "toolName": "prepare_incident_report",
+      "action": "Incident Report Compilation",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Compiled incident report REP-MVL8PR6G-GZNG with full XSS escaping and export capabilities"
+    },
+    {
+      "id": "AUD-1792776290776-686d9f",
+      "timestamp": "2026-10-23T17:24:50.776Z",
+      "caseId": "INV-MVL8PR6G-WXZD",
+      "toolName": "create_safety_plan",
+      "action": "Defensive Guidance & Action Planning",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Generated directive: \"DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.\" with 4 prioritized action items and 4 reporting endpoints"
+    },
+    {
+      "id": "AUD-1792776290776-d4ca21",
+      "timestamp": "2026-10-23T17:24:50.776Z",
+      "caseId": "INV-MVL8PR6G-WXZD",
+      "toolName": "assess_evidence",
+      "action": "Evidence Synthesis & Risk Assessment",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Calculated Risk: HIGH (Score: 60/100, Evidence: MODERATE, Uncertainty: MODERATE)"
+    },
+    {
+      "id": "AUD-1792776290776-4c976d",
+      "timestamp": "2026-10-23T17:24:50.776Z",
+      "caseId": "INV-MVL8PR6G-WXZD",
+      "toolName": "analyze_message",
+      "action": "Linguistic & Entity Extraction",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Extracted 0 URLs, 0 payment keywords, 1 credential tokens (Engine: Deterministic Heuristic)"
+    },
+    {
+      "id": "AUD-1792776158899-a0457f",
+      "timestamp": "2026-10-23T17:22:38.899Z",
+      "caseId": "INV-MVL8MXF4-LWLQ",
+      "toolName": "verify_action",
+      "action": "Ephemeral Report Verification",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Verified in-memory forensic report integrity (ephemeral mode - private data not written to shared database)."
+    },
+    {
+      "id": "AUD-1792776158899-cc27b7",
+      "timestamp": "2026-10-23T17:22:38.899Z",
+      "caseId": "INV-MVL8MXF4-LWLQ",
+      "toolName": "prepare_incident_report",
+      "action": "Incident Report Compilation",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Compiled incident report REP-MVL8MXF7-XU66 with full XSS escaping and export capabilities"
+    },
+    {
+      "id": "AUD-1792776158898-6be3b5",
+      "timestamp": "2026-10-23T17:22:38.898Z",
+      "caseId": "INV-MVL8MXF4-LWLQ",
+      "toolName": "create_safety_plan",
+      "action": "Defensive Guidance & Action Planning",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Generated directive: \"DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.\" with 4 prioritized action items and 4 reporting endpoints"
+    },
+    {
+      "id": "AUD-1792776158898-ef1d51",
+      "timestamp": "2026-10-23T17:22:38.898Z",
+      "caseId": "INV-MVL8MXF4-LWLQ",
+      "toolName": "assess_evidence",
+      "action": "Evidence Synthesis & Risk Assessment",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Calculated Risk: HIGH (Score: 60/100, Evidence: MODERATE, Uncertainty: MODERATE)"
+    },
+    {
+      "id": "AUD-1792776158898-24450b",
+      "timestamp": "2026-10-23T17:22:38.898Z",
+      "caseId": "INV-MVL8MXF4-LWLQ",
+      "toolName": "analyze_message",
+      "action": "Linguistic & Entity Extraction",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Extracted 0 URLs, 0 payment keywords, 1 credential tokens (Engine: Deterministic Heuristic)"
+    },
+    {
+      "id": "AUD-1792773492211-2ec79a",
+      "timestamp": "2026-10-23T16:38:12.211Z",
+      "caseId": "CASE-CONCURRENT-9-1792773492208",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-9-1792773492208'"
+    },
+    {
+      "id": "AUD-1792773492211-9ffe2a",
+      "timestamp": "2026-10-23T16:38:12.211Z",
+      "caseId": "CASE-CONCURRENT-8-1792773492207",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-8-1792773492207'"
+    },
+    {
+      "id": "AUD-1792773492211-e0e847",
+      "timestamp": "2026-10-23T16:38:12.211Z",
+      "caseId": "CASE-CONCURRENT-7-1792773492207",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-7-1792773492207'"
+    },
+    {
+      "id": "AUD-1792773492211-7a9007",
+      "timestamp": "2026-10-23T16:38:12.211Z",
+      "caseId": "CASE-CONCURRENT-6-1792773492207",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-6-1792773492207'"
+    },
+    {
+      "id": "AUD-1792773492211-4ce8f2",
+      "timestamp": "2026-10-23T16:38:12.211Z",
+      "caseId": "CASE-CONCURRENT-5-1792773492207",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-5-1792773492207'"
+    },
+    {
+      "id": "AUD-1792773492211-03c0a1",
+      "timestamp": "2026-10-23T16:38:12.211Z",
+      "caseId": "CASE-CONCURRENT-4-1792773492207",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-4-1792773492207'"
+    },
+    {
+      "id": "AUD-1792773492211-90bd06",
+      "timestamp": "2026-10-23T16:38:12.211Z",
+      "caseId": "CASE-CONCURRENT-3-1792773492207",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-3-1792773492207'"
+    },
+    {
+      "id": "AUD-1792773492211-1af3f8",
+      "timestamp": "2026-10-23T16:38:12.211Z",
+      "caseId": "CASE-CONCURRENT-2-1792773492207",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-2-1792773492207'"
+    },
+    {
+      "id": "AUD-1792773492211-c620e8",
+      "timestamp": "2026-10-23T16:38:12.211Z",
+      "caseId": "CASE-CONCURRENT-1-1792773492206",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-1-1792773492206'"
+    },
+    {
+      "id": "AUD-1792773492210-2b3d49",
+      "timestamp": "2026-10-23T16:38:12.211Z",
+      "caseId": "CASE-CONCURRENT-0-1792773492206",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-0-1792773492206'"
+    },
+    {
+      "id": "AUD-1792773492208-8e8944",
+      "timestamp": "2026-10-23T16:38:12.208Z",
+      "caseId": "CASE-CONCURRENT-9-1792773492208",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-9-1792773492208' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773492207-540a81",
+      "timestamp": "2026-10-23T16:38:12.208Z",
+      "caseId": "CASE-CONCURRENT-8-1792773492207",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-8-1792773492207' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773492207-59f673",
+      "timestamp": "2026-10-23T16:38:12.207Z",
+      "caseId": "CASE-CONCURRENT-7-1792773492207",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-7-1792773492207' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773492207-64970a",
+      "timestamp": "2026-10-23T16:38:12.207Z",
+      "caseId": "CASE-CONCURRENT-6-1792773492207",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-6-1792773492207' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773492207-12cdfb",
+      "timestamp": "2026-10-23T16:38:12.207Z",
+      "caseId": "CASE-CONCURRENT-5-1792773492207",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-5-1792773492207' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773492207-8f6a9e",
+      "timestamp": "2026-10-23T16:38:12.207Z",
+      "caseId": "CASE-CONCURRENT-4-1792773492207",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-4-1792773492207' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773492207-7c8fc6",
+      "timestamp": "2026-10-23T16:38:12.207Z",
+      "caseId": "CASE-CONCURRENT-3-1792773492207",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-3-1792773492207' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773492207-e51d72",
+      "timestamp": "2026-10-23T16:38:12.207Z",
+      "caseId": "CASE-CONCURRENT-2-1792773492207",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-2-1792773492207' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773492207-247ed3",
+      "timestamp": "2026-10-23T16:38:12.207Z",
+      "caseId": "CASE-CONCURRENT-1-1792773492206",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-1-1792773492206' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773492206-4524f8",
+      "timestamp": "2026-10-23T16:38:12.206Z",
+      "caseId": "CASE-CONCURRENT-0-1792773492206",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-0-1792773492206' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773491745-6f656c",
+      "timestamp": "2026-10-23T16:38:11.745Z",
+      "caseId": "CASE-MVL71RFK-D615B7",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-MVL71RFK-D615B7' with risk level CRITICAL"
+    },
+    {
+      "id": "AUD-1792773490769-701f7e",
+      "timestamp": "2026-10-23T16:38:10.769Z",
+      "caseId": "CASE-TEST-1792773490755",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-TEST-1792773490755'"
+    },
+    {
+      "id": "AUD-1792773490761-b09eb9",
+      "timestamp": "2026-10-23T16:38:10.761Z",
+      "caseId": "CASE-TEST-1792773490755",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-TEST-1792773490755' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792773490528-865a31",
+      "timestamp": "2026-10-23T16:38:10.528Z",
+      "caseId": "CASE-MVL71QHR-464C1B",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-MVL71QHR-464C1B' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792773490483-925b6f",
+      "timestamp": "2026-10-23T16:38:10.483Z",
+      "caseId": "INV-MVL71LTS-HT71",
+      "toolName": "verify_action",
+      "action": "Action Read-Back Verification",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Verification confirmed: Record 'INV-MVL71LTS-HT71' exists, schema validates, and SHA-256 payload integrity check passed (6f7e32838766...)."
+    },
+    {
+      "id": "AUD-1792773490483-1481de",
+      "timestamp": "2026-10-23T16:38:10.483Z",
+      "caseId": "INV-MVL71LTS-HT71",
+      "toolName": "save_investigation",
+      "action": "Persistence to Database",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Persisted case 'INV-MVL71LTS-HT71' with SHA-256 integrity hash 6f7e328387..."
+    },
+    {
+      "id": "AUD-1792773490483-46b921",
+      "timestamp": "2026-10-23T16:38:10.483Z",
+      "caseId": "INV-MVL71LTS-HT71",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'INV-MVL71LTS-HT71' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792773490482-ff109a",
+      "timestamp": "2026-10-23T16:38:10.482Z",
+      "caseId": "INV-MVL71LTS-HT71",
+      "toolName": "prepare_incident_report",
+      "action": "Incident Report Compilation",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Compiled incident report REP-MVL71QGI-3ZHO with full XSS escaping and export capabilities"
+    },
+    {
+      "id": "AUD-1792773490482-af8fdf",
+      "timestamp": "2026-10-23T16:38:10.482Z",
+      "caseId": "INV-MVL71LTS-HT71",
+      "toolName": "create_safety_plan",
+      "action": "Defensive Guidance & Action Planning",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Generated directive: \"DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.\" with 3 prioritized action items and 4 reporting endpoints"
+    },
+    {
+      "id": "AUD-1792773490482-094c15",
+      "timestamp": "2026-10-23T16:38:10.482Z",
+      "caseId": "INV-MVL71LTS-HT71",
+      "toolName": "assess_evidence",
+      "action": "Evidence Synthesis & Risk Assessment",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Calculated Risk: HIGH (Score: 50/100, Evidence: MODERATE, Uncertainty: MODERATE)"
+    },
+    {
+      "id": "AUD-1792773490482-506140",
+      "timestamp": "2026-10-23T16:38:10.482Z",
+      "caseId": "INV-MVL71LTS-HT71",
+      "toolName": "analyze_message",
+      "action": "Linguistic & Entity Extraction",
+      "outcome": "SUCCESS",
+      "durationMs": 6002,
+      "details": "Extracted 0 URLs, 1 payment keywords, 0 credential tokens (Engine: Deterministic Heuristic)"
+    },
+    {
+      "id": "AUD-1792773484469-5f30e8",
+      "timestamp": "2026-10-23T16:38:04.469Z",
+      "caseId": "INV-MVL71H6N-MBPY",
+      "toolName": "verify_action",
+      "action": "Ephemeral Report Verification",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Verified in-memory forensic report integrity (ephemeral mode - private data not written to shared database)."
+    },
+    {
+      "id": "AUD-1792773484469-397a8e",
+      "timestamp": "2026-10-23T16:38:04.469Z",
+      "caseId": "INV-MVL71H6N-MBPY",
+      "toolName": "prepare_incident_report",
+      "action": "Incident Report Compilation",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Compiled incident report REP-MVL71LTG-W7MT with full XSS escaping and export capabilities"
+    },
+    {
+      "id": "AUD-1792773484468-4b7b10",
+      "timestamp": "2026-10-23T16:38:04.468Z",
+      "caseId": "INV-MVL71H6N-MBPY",
+      "toolName": "create_safety_plan",
+      "action": "Defensive Guidance & Action Planning",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Generated directive: \"DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.\" with 3 prioritized action items and 4 reporting endpoints"
+    },
+    {
+      "id": "AUD-1792773484468-8273b2",
+      "timestamp": "2026-10-23T16:38:04.468Z",
+      "caseId": "INV-MVL71H6N-MBPY",
+      "toolName": "assess_evidence",
+      "action": "Evidence Synthesis & Risk Assessment",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Calculated Risk: HIGH (Score: 50/100, Evidence: MODERATE, Uncertainty: MODERATE)"
+    },
+    {
+      "id": "AUD-1792773484467-f6da03",
+      "timestamp": "2026-10-23T16:38:04.467Z",
+      "caseId": "INV-MVL71H6N-MBPY",
+      "toolName": "analyze_message",
+      "action": "Linguistic & Entity Extraction",
+      "outcome": "SUCCESS",
+      "durationMs": 6004,
+      "details": "Extracted 0 URLs, 1 payment keywords, 0 credential tokens (Engine: Deterministic Heuristic)"
+    },
+    {
+      "id": "AUD-1792773390563-875a61",
+      "timestamp": "2026-10-23T16:36:30.563Z",
+      "caseId": "CASE-CONCURRENT-9-1792773390560",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-9-1792773390560'"
+    },
+    {
+      "id": "AUD-1792773390563-60080e",
+      "timestamp": "2026-10-23T16:36:30.563Z",
+      "caseId": "CASE-CONCURRENT-8-1792773390560",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-8-1792773390560'"
+    },
+    {
+      "id": "AUD-1792773390563-9ca7ba",
+      "timestamp": "2026-10-23T16:36:30.563Z",
+      "caseId": "CASE-CONCURRENT-7-1792773390560",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-7-1792773390560'"
+    },
+    {
+      "id": "AUD-1792773390563-9a5e77",
+      "timestamp": "2026-10-23T16:36:30.563Z",
+      "caseId": "CASE-CONCURRENT-6-1792773390560",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-6-1792773390560'"
+    },
+    {
+      "id": "AUD-1792773390563-678119",
+      "timestamp": "2026-10-23T16:36:30.563Z",
+      "caseId": "CASE-CONCURRENT-5-1792773390560",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-5-1792773390560'"
+    },
+    {
+      "id": "AUD-1792773390563-798044",
+      "timestamp": "2026-10-23T16:36:30.563Z",
+      "caseId": "CASE-CONCURRENT-4-1792773390559",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-4-1792773390559'"
+    },
+    {
+      "id": "AUD-1792773390562-512c6b",
+      "timestamp": "2026-10-23T16:36:30.563Z",
+      "caseId": "CASE-CONCURRENT-3-1792773390559",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-3-1792773390559'"
+    },
+    {
+      "id": "AUD-1792773390562-69cfd7",
+      "timestamp": "2026-10-23T16:36:30.562Z",
+      "caseId": "CASE-CONCURRENT-2-1792773390559",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-2-1792773390559'"
+    },
+    {
+      "id": "AUD-1792773390562-c874a2",
+      "timestamp": "2026-10-23T16:36:30.562Z",
+      "caseId": "CASE-CONCURRENT-1-1792773390559",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-1-1792773390559'"
+    },
+    {
+      "id": "AUD-1792773390562-9c3e21",
+      "timestamp": "2026-10-23T16:36:30.562Z",
+      "caseId": "CASE-CONCURRENT-0-1792773390558",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-0-1792773390558'"
+    },
+    {
+      "id": "AUD-1792773390560-9203c2",
+      "timestamp": "2026-10-23T16:36:30.560Z",
+      "caseId": "CASE-CONCURRENT-9-1792773390560",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-9-1792773390560' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773390560-7bac92",
+      "timestamp": "2026-10-23T16:36:30.560Z",
+      "caseId": "CASE-CONCURRENT-8-1792773390560",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-8-1792773390560' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773390560-9aa05f",
+      "timestamp": "2026-10-23T16:36:30.560Z",
+      "caseId": "CASE-CONCURRENT-7-1792773390560",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-7-1792773390560' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773390560-c07532",
+      "timestamp": "2026-10-23T16:36:30.560Z",
+      "caseId": "CASE-CONCURRENT-6-1792773390560",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-6-1792773390560' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773390560-513e3f",
+      "timestamp": "2026-10-23T16:36:30.560Z",
+      "caseId": "CASE-CONCURRENT-5-1792773390560",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-5-1792773390560' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773390559-b24253",
+      "timestamp": "2026-10-23T16:36:30.560Z",
+      "caseId": "CASE-CONCURRENT-4-1792773390559",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-4-1792773390559' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773390559-44f4a7",
+      "timestamp": "2026-10-23T16:36:30.559Z",
+      "caseId": "CASE-CONCURRENT-3-1792773390559",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-3-1792773390559' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773390559-b5dc94",
+      "timestamp": "2026-10-23T16:36:30.559Z",
+      "caseId": "CASE-CONCURRENT-2-1792773390559",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-2-1792773390559' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773390559-4aad77",
+      "timestamp": "2026-10-23T16:36:30.559Z",
+      "caseId": "CASE-CONCURRENT-1-1792773390559",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-1-1792773390559' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773390559-ae5f8e",
+      "timestamp": "2026-10-23T16:36:30.559Z",
+      "caseId": "CASE-CONCURRENT-0-1792773390558",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-0-1792773390558' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792773390040-d6ea3c",
+      "timestamp": "2026-10-23T16:36:30.040Z",
+      "caseId": "CASE-MVL6ZKYF-A1EFC4",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-MVL6ZKYF-A1EFC4' with risk level CRITICAL"
+    },
+    {
+      "id": "AUD-1792773388782-97e845",
+      "timestamp": "2026-10-23T16:36:28.783Z",
+      "caseId": "CASE-TEST-1792773388770",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-TEST-1792773388770'"
+    },
+    {
+      "id": "AUD-1792773388777-ee9e4b",
+      "timestamp": "2026-10-23T16:36:28.777Z",
+      "caseId": "CASE-TEST-1792773388770",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-TEST-1792773388770' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792773388530-689125",
+      "timestamp": "2026-10-23T16:36:28.530Z",
+      "caseId": "CASE-MVL6ZJSH-E985FF",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-MVL6ZJSH-E985FF' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792773388491-e48cda",
+      "timestamp": "2026-10-23T16:36:28.491Z",
+      "caseId": "INV-MVL6ZF4P-75CN",
+      "toolName": "verify_action",
+      "action": "Action Read-Back Verification",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Verification confirmed: Record 'INV-MVL6ZF4P-75CN' exists, schema validates, and SHA-256 payload integrity check passed (62c932351b9f...)."
+    },
+    {
+      "id": "AUD-1792773388491-643601",
+      "timestamp": "2026-10-23T16:36:28.491Z",
+      "caseId": "INV-MVL6ZF4P-75CN",
+      "toolName": "save_investigation",
+      "action": "Persistence to Database",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Persisted case 'INV-MVL6ZF4P-75CN' with SHA-256 integrity hash 62c932351b..."
+    },
+    {
+      "id": "AUD-1792773388491-f35e72",
+      "timestamp": "2026-10-23T16:36:28.491Z",
+      "caseId": "INV-MVL6ZF4P-75CN",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'INV-MVL6ZF4P-75CN' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792773388491-d16dcc",
+      "timestamp": "2026-10-23T16:36:28.491Z",
+      "caseId": "INV-MVL6ZF4P-75CN",
+      "toolName": "prepare_incident_report",
+      "action": "Incident Report Compilation",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Compiled incident report REP-MVL6ZJRE-PTO8 with full XSS escaping and export capabilities"
+    },
+    {
+      "id": "AUD-1792773388490-7c83a7",
+      "timestamp": "2026-10-23T16:36:28.490Z",
+      "caseId": "INV-MVL6ZF4P-75CN",
+      "toolName": "create_safety_plan",
+      "action": "Defensive Guidance & Action Planning",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Generated directive: \"DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.\" with 3 prioritized action items and 4 reporting endpoints"
+    },
+    {
+      "id": "AUD-1792773388490-2dd659",
+      "timestamp": "2026-10-23T16:36:28.490Z",
+      "caseId": "INV-MVL6ZF4P-75CN",
+      "toolName": "assess_evidence",
+      "action": "Evidence Synthesis & Risk Assessment",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Calculated Risk: HIGH (Score: 50/100, Evidence: MODERATE, Uncertainty: MODERATE)"
+    },
+    {
+      "id": "AUD-1792773388490-cbe6bc",
+      "timestamp": "2026-10-23T16:36:28.490Z",
+      "caseId": "INV-MVL6ZF4P-75CN",
+      "toolName": "analyze_message",
+      "action": "Linguistic & Entity Extraction",
+      "outcome": "SUCCESS",
+      "durationMs": 6001,
+      "details": "Extracted 0 URLs, 1 payment keywords, 0 credential tokens (Engine: Deterministic Heuristic)"
+    },
+    {
+      "id": "AUD-1792773382476-fcef07",
+      "timestamp": "2026-10-23T16:36:22.476Z",
+      "caseId": "INV-MVL6ZAHM-L855",
+      "toolName": "verify_action",
+      "action": "Ephemeral Report Verification",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Verified in-memory forensic report integrity (ephemeral mode - private data not written to shared database)."
+    },
+    {
+      "id": "AUD-1792773382476-0bdfa7",
+      "timestamp": "2026-10-23T16:36:22.476Z",
+      "caseId": "INV-MVL6ZAHM-L855",
+      "toolName": "prepare_incident_report",
+      "action": "Incident Report Compilation",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Compiled incident report REP-MVL6ZF4C-WITQ with full XSS escaping and export capabilities"
+    },
+    {
+      "id": "AUD-1792773382476-738da9",
+      "timestamp": "2026-10-23T16:36:22.476Z",
+      "caseId": "INV-MVL6ZAHM-L855",
+      "toolName": "create_safety_plan",
+      "action": "Defensive Guidance & Action Planning",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Generated directive: \"DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.\" with 3 prioritized action items and 4 reporting endpoints"
+    },
+    {
+      "id": "AUD-1792773382476-131ee0",
+      "timestamp": "2026-10-23T16:36:22.476Z",
+      "caseId": "INV-MVL6ZAHM-L855",
+      "toolName": "assess_evidence",
+      "action": "Evidence Synthesis & Risk Assessment",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Calculated Risk: HIGH (Score: 50/100, Evidence: MODERATE, Uncertainty: MODERATE)"
+    },
+    {
+      "id": "AUD-1792773382475-dd9396",
+      "timestamp": "2026-10-23T16:36:22.475Z",
+      "caseId": "INV-MVL6ZAHM-L855",
+      "toolName": "analyze_message",
+      "action": "Linguistic & Entity Extraction",
+      "outcome": "SUCCESS",
+      "durationMs": 6001,
+      "details": "Extracted 0 URLs, 1 payment keywords, 0 credential tokens (Engine: Deterministic Heuristic)"
+    },
+    {
+      "id": "AUD-1792773351646-35457e",
+      "timestamp": "2026-10-23T16:35:51.646Z",
+      "caseId": "CASE-MVL6YRBY-DF4BF7",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-MVL6YRBY-DF4BF7' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792773351574-b42a4e",
+      "timestamp": "2026-10-23T16:35:51.574Z",
+      "caseId": "INV-MVL6YMN6-QD53",
+      "toolName": "verify_action",
+      "action": "Action Read-Back Verification",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Verification confirmed: Record 'INV-MVL6YMN6-QD53' exists, schema validates, and SHA-256 payload integrity check passed (abc7b5dd6d0c...)."
+    },
+    {
+      "id": "AUD-1792773351573-026754",
+      "timestamp": "2026-10-23T16:35:51.573Z",
+      "caseId": "INV-MVL6YMN6-QD53",
+      "toolName": "save_investigation",
+      "action": "Persistence to Database",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Persisted case 'INV-MVL6YMN6-QD53' with SHA-256 integrity hash abc7b5dd6d..."
+    },
+    {
+      "id": "AUD-1792773351573-185b36",
+      "timestamp": "2026-10-23T16:35:51.573Z",
+      "caseId": "INV-MVL6YMN6-QD53",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'INV-MVL6YMN6-QD53' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792773351573-9437c6",
+      "timestamp": "2026-10-23T16:35:51.573Z",
+      "caseId": "INV-MVL6YMN6-QD53",
+      "toolName": "prepare_incident_report",
+      "action": "Incident Report Compilation",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Compiled incident report REP-MVL6YR9X-LILY with full XSS escaping and export capabilities"
+    },
+    {
+      "id": "AUD-1792773351573-d1f9c1",
+      "timestamp": "2026-10-23T16:35:51.573Z",
+      "caseId": "INV-MVL6YMN6-QD53",
+      "toolName": "create_safety_plan",
+      "action": "Defensive Guidance & Action Planning",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Generated directive: \"DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.\" with 3 prioritized action items and 4 reporting endpoints"
+    },
+    {
+      "id": "AUD-1792773351572-6f28fe",
+      "timestamp": "2026-10-23T16:35:51.572Z",
+      "caseId": "INV-MVL6YMN6-QD53",
+      "toolName": "assess_evidence",
+      "action": "Evidence Synthesis & Risk Assessment",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Calculated Risk: HIGH (Score: 50/100, Evidence: MODERATE, Uncertainty: MODERATE)"
+    },
+    {
+      "id": "AUD-1792773351572-0313db",
+      "timestamp": "2026-10-23T16:35:51.572Z",
+      "caseId": "INV-MVL6YMN6-QD53",
+      "toolName": "analyze_message",
+      "action": "Linguistic & Entity Extraction",
+      "outcome": "SUCCESS",
+      "durationMs": 6002,
+      "details": "Extracted 0 URLs, 1 payment keywords, 0 credential tokens (Engine: Deterministic Heuristic)"
+    },
+    {
+      "id": "AUD-1792773345557-535bd2",
+      "timestamp": "2026-10-23T16:35:45.557Z",
+      "caseId": "INV-MVL6YM9P-S4H4",
+      "toolName": "verify_action",
+      "action": "Ephemeral Report Verification",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Verified in-memory forensic report integrity (ephemeral mode - private data not written to shared database)."
+    },
+    {
+      "id": "AUD-1792773345557-ab736b",
+      "timestamp": "2026-10-23T16:35:45.557Z",
+      "caseId": "INV-MVL6YM9P-S4H4",
+      "toolName": "prepare_incident_report",
+      "action": "Incident Report Compilation",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Compiled incident report REP-MVL6YMMS-R11R with full XSS escaping and export capabilities"
+    },
+    {
+      "id": "AUD-1792773345556-198b1d",
+      "timestamp": "2026-10-23T16:35:45.556Z",
+      "caseId": "INV-MVL6YM9P-S4H4",
+      "toolName": "create_safety_plan",
+      "action": "Defensive Guidance & Action Planning",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Generated directive: \"DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.\" with 3 prioritized action items and 4 reporting endpoints"
+    },
+    {
+      "id": "AUD-1792773345556-6f1538",
+      "timestamp": "2026-10-23T16:35:45.556Z",
+      "caseId": "INV-MVL6YM9P-S4H4",
+      "toolName": "assess_evidence",
+      "action": "Evidence Synthesis & Risk Assessment",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Calculated Risk: HIGH (Score: 50/100, Evidence: MODERATE, Uncertainty: MODERATE)"
+    },
+    {
+      "id": "AUD-1792773345555-2f5bbf",
+      "timestamp": "2026-10-23T16:35:45.555Z",
+      "caseId": "INV-MVL6YM9P-S4H4",
+      "toolName": "analyze_message",
+      "action": "Linguistic & Entity Extraction",
+      "outcome": "SUCCESS",
+      "durationMs": 469,
+      "details": "Extracted 0 URLs, 1 payment keywords, 0 credential tokens (Engine: Deterministic Heuristic)"
+    },
+    {
+      "id": "AUD-1792773291364-be29ff",
+      "timestamp": "2026-10-23T16:34:51.364Z",
+      "caseId": "CASE-MVL6XGTG-E244C3",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-MVL6XGTG-E244C3' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792773291325-f2e638",
+      "timestamp": "2026-10-23T16:34:51.325Z",
+      "caseId": "INV-MVL6XC5L-JWY4",
+      "toolName": "verify_action",
+      "action": "Action Read-Back Verification",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Verification confirmed: Record 'INV-MVL6XC5L-JWY4' exists, schema validates, and SHA-256 payload integrity check passed (6ebaa83b8d8d...)."
+    },
+    {
+      "id": "AUD-1792773291325-bc8b65",
+      "timestamp": "2026-10-23T16:34:51.325Z",
+      "caseId": "INV-MVL6XC5L-JWY4",
+      "toolName": "save_investigation",
+      "action": "Persistence to Database",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Persisted case 'INV-MVL6XC5L-JWY4' with SHA-256 integrity hash 6ebaa83b8d..."
+    },
+    {
+      "id": "AUD-1792773291325-efd3a4",
+      "timestamp": "2026-10-23T16:34:51.325Z",
+      "caseId": "INV-MVL6XC5L-JWY4",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'INV-MVL6XC5L-JWY4' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792773291324-07d1e2",
+      "timestamp": "2026-10-23T16:34:51.324Z",
+      "caseId": "INV-MVL6XC5L-JWY4",
+      "toolName": "prepare_incident_report",
+      "action": "Incident Report Compilation",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Compiled incident report REP-MVL6XGSC-VLQ9 with full XSS escaping and export capabilities"
+    },
+    {
+      "id": "AUD-1792773291324-9c4832",
+      "timestamp": "2026-10-23T16:34:51.324Z",
+      "caseId": "INV-MVL6XC5L-JWY4",
+      "toolName": "create_safety_plan",
+      "action": "Defensive Guidance & Action Planning",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Generated directive: \"DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.\" with 3 prioritized action items and 4 reporting endpoints"
+    },
+    {
+      "id": "AUD-1792773291323-1b18aa",
+      "timestamp": "2026-10-23T16:34:51.323Z",
+      "caseId": "INV-MVL6XC5L-JWY4",
+      "toolName": "assess_evidence",
+      "action": "Evidence Synthesis & Risk Assessment",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Calculated Risk: HIGH (Score: 50/100, Evidence: MODERATE, Uncertainty: MODERATE)"
+    },
+    {
+      "id": "AUD-1792773291323-c76c10",
+      "timestamp": "2026-10-23T16:34:51.323Z",
+      "caseId": "INV-MVL6XC5L-JWY4",
+      "toolName": "analyze_message",
+      "action": "Linguistic & Entity Extraction",
+      "outcome": "SUCCESS",
+      "durationMs": 6002,
+      "details": "Extracted 0 URLs, 1 payment keywords, 0 credential tokens (Engine: Deterministic Heuristic)"
+    },
+    {
+      "id": "AUD-1792773285300-89032a",
+      "timestamp": "2026-10-23T16:34:45.300Z",
+      "caseId": "INV-MVL6X7I4-ILEF",
+      "toolName": "verify_action",
+      "action": "Ephemeral Report Verification",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Verified in-memory forensic report integrity (ephemeral mode - private data not written to shared database)."
+    },
+    {
+      "id": "AUD-1792773285300-b5339b",
+      "timestamp": "2026-10-23T16:34:45.300Z",
+      "caseId": "INV-MVL6X7I4-ILEF",
+      "toolName": "prepare_incident_report",
+      "action": "Incident Report Compilation",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Compiled incident report REP-MVL6XC4Z-M75Q with full XSS escaping and export capabilities"
+    },
+    {
+      "id": "AUD-1792773285299-13fb0c",
+      "timestamp": "2026-10-23T16:34:45.299Z",
+      "caseId": "INV-MVL6X7I4-ILEF",
+      "toolName": "create_safety_plan",
+      "action": "Defensive Guidance & Action Planning",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Generated directive: \"DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.\" with 3 prioritized action items and 4 reporting endpoints"
+    },
+    {
+      "id": "AUD-1792773285298-6d0d1f",
+      "timestamp": "2026-10-23T16:34:45.298Z",
+      "caseId": "INV-MVL6X7I4-ILEF",
+      "toolName": "assess_evidence",
+      "action": "Evidence Synthesis & Risk Assessment",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Calculated Risk: HIGH (Score: 50/100, Evidence: MODERATE, Uncertainty: MODERATE)"
+    },
+    {
+      "id": "AUD-1792773285297-810966",
+      "timestamp": "2026-10-23T16:34:45.297Z",
+      "caseId": "INV-MVL6X7I4-ILEF",
+      "toolName": "analyze_message",
+      "action": "Linguistic & Entity Extraction",
+      "outcome": "SUCCESS",
+      "durationMs": 6005,
+      "details": "Extracted 0 URLs, 1 payment keywords, 0 credential tokens (Engine: Deterministic Heuristic)"
+    },
+    {
+      "id": "AUD-1792772017115-416f5d",
+      "timestamp": "2026-10-23T16:13:37.115Z",
+      "caseId": "CASE-CONCURRENT-9-1792772017113",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-9-1792772017113'"
+    },
+    {
+      "id": "AUD-1792772017115-53b8be",
+      "timestamp": "2026-10-23T16:13:37.115Z",
+      "caseId": "CASE-CONCURRENT-8-1792772017113",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-8-1792772017113'"
+    },
+    {
+      "id": "AUD-1792772017115-4c973c",
+      "timestamp": "2026-10-23T16:13:37.115Z",
+      "caseId": "CASE-CONCURRENT-7-1792772017113",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-7-1792772017113'"
+    },
+    {
+      "id": "AUD-1792772017115-aa87bf",
+      "timestamp": "2026-10-23T16:13:37.115Z",
+      "caseId": "CASE-CONCURRENT-6-1792772017113",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-6-1792772017113'"
+    },
+    {
+      "id": "AUD-1792772017115-8611e0",
+      "timestamp": "2026-10-23T16:13:37.115Z",
+      "caseId": "CASE-CONCURRENT-5-1792772017113",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-5-1792772017113'"
+    },
+    {
+      "id": "AUD-1792772017115-7a076e",
+      "timestamp": "2026-10-23T16:13:37.115Z",
+      "caseId": "CASE-CONCURRENT-4-1792772017113",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-4-1792772017113'"
+    },
+    {
+      "id": "AUD-1792772017115-e7d761",
+      "timestamp": "2026-10-23T16:13:37.115Z",
+      "caseId": "CASE-CONCURRENT-3-1792772017113",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-3-1792772017113'"
+    },
+    {
+      "id": "AUD-1792772017115-333899",
+      "timestamp": "2026-10-23T16:13:37.115Z",
+      "caseId": "CASE-CONCURRENT-2-1792772017112",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-2-1792772017112'"
+    },
+    {
+      "id": "AUD-1792772017115-a391e3",
+      "timestamp": "2026-10-23T16:13:37.115Z",
+      "caseId": "CASE-CONCURRENT-1-1792772017112",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-1-1792772017112'"
+    },
+    {
+      "id": "AUD-1792772017115-3e38c3",
+      "timestamp": "2026-10-23T16:13:37.115Z",
+      "caseId": "CASE-CONCURRENT-0-1792772017111",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-0-1792772017111'"
+    },
+    {
+      "id": "AUD-1792772017113-3b077e",
+      "timestamp": "2026-10-23T16:13:37.113Z",
+      "caseId": "CASE-CONCURRENT-9-1792772017113",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-9-1792772017113' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792772017113-893738",
+      "timestamp": "2026-10-23T16:13:37.113Z",
+      "caseId": "CASE-CONCURRENT-8-1792772017113",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-8-1792772017113' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792772017113-455c75",
+      "timestamp": "2026-10-23T16:13:37.113Z",
+      "caseId": "CASE-CONCURRENT-7-1792772017113",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-7-1792772017113' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792772017113-74b62d",
+      "timestamp": "2026-10-23T16:13:37.113Z",
+      "caseId": "CASE-CONCURRENT-6-1792772017113",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-6-1792772017113' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792772017113-ba3b50",
+      "timestamp": "2026-10-23T16:13:37.113Z",
+      "caseId": "CASE-CONCURRENT-5-1792772017113",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-5-1792772017113' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792772017113-883747",
+      "timestamp": "2026-10-23T16:13:37.113Z",
+      "caseId": "CASE-CONCURRENT-4-1792772017113",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-4-1792772017113' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792772017113-e9ab23",
+      "timestamp": "2026-10-23T16:13:37.113Z",
+      "caseId": "CASE-CONCURRENT-3-1792772017113",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-3-1792772017113' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792772017113-acbfc1",
+      "timestamp": "2026-10-23T16:13:37.113Z",
+      "caseId": "CASE-CONCURRENT-2-1792772017112",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-2-1792772017112' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792772017112-731f6e",
+      "timestamp": "2026-10-23T16:13:37.112Z",
+      "caseId": "CASE-CONCURRENT-1-1792772017112",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-1-1792772017112' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792772017112-f17574",
+      "timestamp": "2026-10-23T16:13:37.112Z",
+      "caseId": "CASE-CONCURRENT-0-1792772017111",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-0-1792772017111' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792772015684-c9f2e9",
+      "timestamp": "2026-10-23T16:13:35.684Z",
+      "caseId": "CASE-TEST-1792772015673",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-TEST-1792772015673'"
+    },
+    {
+      "id": "AUD-1792772015680-5d51f6",
+      "timestamp": "2026-10-23T16:13:35.680Z",
+      "caseId": "CASE-TEST-1792772015673",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-TEST-1792772015673' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792771995051-c57da8",
+      "timestamp": "2026-10-23T16:13:15.051Z",
+      "caseId": "INV-MVL65LRP-QM6P",
+      "toolName": "verify_action",
+      "action": "Action Read-Back Verification",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Verification confirmed: Record 'INV-MVL65LRP-QM6P' exists, schema validates, and SHA-256 payload integrity check passed (195a7573dd5d...)."
+    },
+    {
+      "id": "AUD-1792771995050-4d97f5",
+      "timestamp": "2026-10-23T16:13:15.050Z",
+      "caseId": "INV-MVL65LRP-QM6P",
+      "toolName": "save_investigation",
+      "action": "Persistence to Database",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Persisted case 'INV-MVL65LRP-QM6P' with SHA-256 integrity hash 195a7573dd..."
+    },
+    {
+      "id": "AUD-1792771995050-1544ec",
+      "timestamp": "2026-10-23T16:13:15.050Z",
+      "caseId": "INV-MVL65LRP-QM6P",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'INV-MVL65LRP-QM6P' with risk level CRITICAL"
+    },
+    {
+      "id": "AUD-1792771995049-34deca",
+      "timestamp": "2026-10-23T16:13:15.049Z",
+      "caseId": "INV-MVL65LRP-QM6P",
+      "toolName": "prepare_incident_report",
+      "action": "Incident Report Compilation",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Compiled incident report REP-MVL65OKP-B07L with full XSS escaping and export capabilities"
+    },
+    {
+      "id": "AUD-1792771995048-fb71cb",
+      "timestamp": "2026-10-23T16:13:15.048Z",
+      "caseId": "INV-MVL65LRP-QM6P",
+      "toolName": "create_safety_plan",
+      "action": "Defensive Guidance & Action Planning",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Generated directive: \"DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.\" with 4 prioritized action items and 4 reporting endpoints"
+    },
+    {
+      "id": "AUD-1792771995048-e98ef8",
+      "timestamp": "2026-10-23T16:13:15.048Z",
+      "caseId": "INV-MVL65LRP-QM6P",
+      "toolName": "assess_evidence",
+      "action": "Evidence Synthesis & Risk Assessment",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Calculated Risk: CRITICAL (Score: 95/100, Evidence: STRONG, Uncertainty: LOW)"
+    },
+    {
+      "id": "AUD-1792771995048-ddbf23",
+      "timestamp": "2026-10-23T16:13:15.048Z",
+      "caseId": "INV-MVL65LRP-QM6P",
+      "toolName": "inspect_url",
+      "action": "URL Structure & Lookalike Domain Inspection",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Inspected 1 URLs. Identified 1 lookalike/deceptive domains. Zero network requests made (SSRF-protected)."
+    },
+    {
+      "id": "AUD-1792771995045-fc871b",
+      "timestamp": "2026-10-23T16:13:15.045Z",
+      "caseId": "INV-MVL65LRP-QM6P",
+      "toolName": "analyze_message",
+      "action": "Linguistic & Entity Extraction",
+      "outcome": "SUCCESS",
+      "durationMs": 3632,
+      "details": "Extracted 0 URLs, 1 payment keywords, 0 credential tokens (Engine: Deterministic Heuristic)"
+    },
+    {
+      "id": "AUD-1792771910156-40703b",
+      "timestamp": "2026-10-23T16:11:50.156Z",
+      "caseId": "CASE-CONCURRENT-9-1792771910154",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-9-1792771910154'"
+    },
+    {
+      "id": "AUD-1792771910156-0b4a44",
+      "timestamp": "2026-10-23T16:11:50.156Z",
+      "caseId": "CASE-CONCURRENT-8-1792771910154",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-8-1792771910154'"
+    },
+    {
+      "id": "AUD-1792771910156-65be16",
+      "timestamp": "2026-10-23T16:11:50.156Z",
+      "caseId": "CASE-CONCURRENT-7-1792771910154",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-7-1792771910154'"
+    },
+    {
+      "id": "AUD-1792771910156-3aadae",
+      "timestamp": "2026-10-23T16:11:50.156Z",
+      "caseId": "CASE-CONCURRENT-6-1792771910154",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-6-1792771910154'"
+    },
+    {
+      "id": "AUD-1792771910156-a448ac",
+      "timestamp": "2026-10-23T16:11:50.156Z",
+      "caseId": "CASE-CONCURRENT-5-1792771910154",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-5-1792771910154'"
+    },
+    {
+      "id": "AUD-1792771910155-4e4d66",
+      "timestamp": "2026-10-23T16:11:50.155Z",
+      "caseId": "CASE-CONCURRENT-4-1792771910153",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-4-1792771910153'"
+    },
+    {
+      "id": "AUD-1792771910155-ce0b5f",
+      "timestamp": "2026-10-23T16:11:50.155Z",
+      "caseId": "CASE-CONCURRENT-3-1792771910153",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-3-1792771910153'"
+    },
+    {
+      "id": "AUD-1792771910155-201893",
+      "timestamp": "2026-10-23T16:11:50.155Z",
+      "caseId": "CASE-CONCURRENT-2-1792771910153",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-2-1792771910153'"
+    },
+    {
+      "id": "AUD-1792771910155-6ee1e7",
+      "timestamp": "2026-10-23T16:11:50.155Z",
+      "caseId": "CASE-CONCURRENT-1-1792771910153",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-1-1792771910153'"
+    },
+    {
+      "id": "AUD-1792771910155-c29b4a",
+      "timestamp": "2026-10-23T16:11:50.155Z",
+      "caseId": "CASE-CONCURRENT-0-1792771910152",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-0-1792771910152'"
+    },
+    {
+      "id": "AUD-1792771910154-dd2f0b",
+      "timestamp": "2026-10-23T16:11:50.154Z",
+      "caseId": "CASE-CONCURRENT-9-1792771910154",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-9-1792771910154' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771910154-bc2342",
+      "timestamp": "2026-10-23T16:11:50.154Z",
+      "caseId": "CASE-CONCURRENT-8-1792771910154",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-8-1792771910154' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771910154-1ba4c0",
+      "timestamp": "2026-10-23T16:11:50.154Z",
+      "caseId": "CASE-CONCURRENT-7-1792771910154",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-7-1792771910154' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771910154-6a63f0",
+      "timestamp": "2026-10-23T16:11:50.154Z",
+      "caseId": "CASE-CONCURRENT-6-1792771910154",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-6-1792771910154' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771910154-45df81",
+      "timestamp": "2026-10-23T16:11:50.154Z",
+      "caseId": "CASE-CONCURRENT-5-1792771910154",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-5-1792771910154' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771910153-ace951",
+      "timestamp": "2026-10-23T16:11:50.154Z",
+      "caseId": "CASE-CONCURRENT-4-1792771910153",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-4-1792771910153' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771910153-d11813",
+      "timestamp": "2026-10-23T16:11:50.153Z",
+      "caseId": "CASE-CONCURRENT-3-1792771910153",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-3-1792771910153' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771910153-d8a760",
+      "timestamp": "2026-10-23T16:11:50.153Z",
+      "caseId": "CASE-CONCURRENT-2-1792771910153",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-2-1792771910153' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771910153-dea964",
+      "timestamp": "2026-10-23T16:11:50.153Z",
+      "caseId": "CASE-CONCURRENT-1-1792771910153",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-1-1792771910153' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771910153-fd5d45",
+      "timestamp": "2026-10-23T16:11:50.153Z",
+      "caseId": "CASE-CONCURRENT-0-1792771910152",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-0-1792771910152' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771908316-49920d",
+      "timestamp": "2026-10-23T16:11:48.317Z",
+      "caseId": "CASE-TEST-1792771908303",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-TEST-1792771908303'"
+    },
+    {
+      "id": "AUD-1792771908311-d61a49",
+      "timestamp": "2026-10-23T16:11:48.312Z",
+      "caseId": "CASE-TEST-1792771908303",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-TEST-1792771908303' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792771092814-0b27d9",
+      "timestamp": "2026-10-23T15:58:12.814Z",
+      "caseId": "CASE-CONCURRENT-9-1792771092813",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-9-1792771092813'"
+    },
+    {
+      "id": "AUD-1792771092814-e52ecd",
+      "timestamp": "2026-10-23T15:58:12.814Z",
+      "caseId": "CASE-CONCURRENT-8-1792771092813",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-8-1792771092813'"
+    },
+    {
+      "id": "AUD-1792771092814-298406",
+      "timestamp": "2026-10-23T15:58:12.814Z",
+      "caseId": "CASE-CONCURRENT-7-1792771092812",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-7-1792771092812'"
+    },
+    {
+      "id": "AUD-1792771092814-3c09b5",
+      "timestamp": "2026-10-23T15:58:12.814Z",
+      "caseId": "CASE-CONCURRENT-6-1792771092812",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-6-1792771092812'"
+    },
+    {
+      "id": "AUD-1792771092814-0b272c",
+      "timestamp": "2026-10-23T15:58:12.814Z",
+      "caseId": "CASE-CONCURRENT-5-1792771092812",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-5-1792771092812'"
+    },
+    {
+      "id": "AUD-1792771092814-cabcaf",
+      "timestamp": "2026-10-23T15:58:12.814Z",
+      "caseId": "CASE-CONCURRENT-4-1792771092812",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-4-1792771092812'"
+    },
+    {
+      "id": "AUD-1792771092814-50c394",
+      "timestamp": "2026-10-23T15:58:12.814Z",
+      "caseId": "CASE-CONCURRENT-3-1792771092812",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-3-1792771092812'"
+    },
+    {
+      "id": "AUD-1792771092814-066878",
+      "timestamp": "2026-10-23T15:58:12.814Z",
+      "caseId": "CASE-CONCURRENT-2-1792771092812",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-2-1792771092812'"
+    },
+    {
+      "id": "AUD-1792771092814-e0a363",
+      "timestamp": "2026-10-23T15:58:12.814Z",
+      "caseId": "CASE-CONCURRENT-1-1792771092812",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-1-1792771092812'"
+    },
+    {
+      "id": "AUD-1792771092814-c51f97",
+      "timestamp": "2026-10-23T15:58:12.814Z",
+      "caseId": "CASE-CONCURRENT-0-1792771092811",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-0-1792771092811'"
+    },
+    {
+      "id": "AUD-1792771092813-0c77b4",
+      "timestamp": "2026-10-23T15:58:12.813Z",
+      "caseId": "CASE-CONCURRENT-9-1792771092813",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-9-1792771092813' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771092813-6e2162",
+      "timestamp": "2026-10-23T15:58:12.813Z",
+      "caseId": "CASE-CONCURRENT-8-1792771092813",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-8-1792771092813' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771092812-470b7d",
+      "timestamp": "2026-10-23T15:58:12.812Z",
+      "caseId": "CASE-CONCURRENT-7-1792771092812",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-7-1792771092812' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771092812-fa5e76",
+      "timestamp": "2026-10-23T15:58:12.812Z",
+      "caseId": "CASE-CONCURRENT-6-1792771092812",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-6-1792771092812' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771092812-0e8ea5",
+      "timestamp": "2026-10-23T15:58:12.812Z",
+      "caseId": "CASE-CONCURRENT-5-1792771092812",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-5-1792771092812' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771092812-7bbed9",
+      "timestamp": "2026-10-23T15:58:12.812Z",
+      "caseId": "CASE-CONCURRENT-4-1792771092812",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-4-1792771092812' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771092812-85eb4a",
+      "timestamp": "2026-10-23T15:58:12.812Z",
+      "caseId": "CASE-CONCURRENT-3-1792771092812",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-3-1792771092812' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771092812-b19522",
+      "timestamp": "2026-10-23T15:58:12.812Z",
+      "caseId": "CASE-CONCURRENT-2-1792771092812",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-2-1792771092812' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771092812-4ad840",
+      "timestamp": "2026-10-23T15:58:12.812Z",
+      "caseId": "CASE-CONCURRENT-1-1792771092812",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-1-1792771092812' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771092811-42d046",
+      "timestamp": "2026-10-23T15:58:12.812Z",
+      "caseId": "CASE-CONCURRENT-0-1792771092811",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-0-1792771092811' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771091201-6203b2",
+      "timestamp": "2026-10-23T15:58:11.201Z",
+      "caseId": "CASE-TEST-1792771091185",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-TEST-1792771091185'"
+    },
+    {
+      "id": "AUD-1792771091196-352c5b",
+      "timestamp": "2026-10-23T15:58:11.196Z",
+      "caseId": "CASE-TEST-1792771091185",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-TEST-1792771091185' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792771048805-ce127d",
+      "timestamp": "2026-10-23T15:57:28.805Z",
+      "caseId": "CASE-CONCURRENT-9-1792771048802",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-9-1792771048802'"
+    },
+    {
+      "id": "AUD-1792771048805-3f0464",
+      "timestamp": "2026-10-23T15:57:28.805Z",
+      "caseId": "CASE-CONCURRENT-8-1792771048801",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-8-1792771048801'"
+    },
+    {
+      "id": "AUD-1792771048805-86d916",
+      "timestamp": "2026-10-23T15:57:28.805Z",
+      "caseId": "CASE-CONCURRENT-7-1792771048801",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-7-1792771048801'"
+    },
+    {
+      "id": "AUD-1792771048805-907995",
+      "timestamp": "2026-10-23T15:57:28.805Z",
+      "caseId": "CASE-CONCURRENT-6-1792771048801",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-6-1792771048801'"
+    },
+    {
+      "id": "AUD-1792771048805-4b3cbb",
+      "timestamp": "2026-10-23T15:57:28.805Z",
+      "caseId": "CASE-CONCURRENT-5-1792771048800",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-5-1792771048800'"
+    },
+    {
+      "id": "AUD-1792771048805-36ed99",
+      "timestamp": "2026-10-23T15:57:28.805Z",
+      "caseId": "CASE-CONCURRENT-4-1792771048800",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-4-1792771048800'"
+    },
+    {
+      "id": "AUD-1792771048805-96bdbe",
+      "timestamp": "2026-10-23T15:57:28.805Z",
+      "caseId": "CASE-CONCURRENT-3-1792771048800",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-3-1792771048800'"
+    },
+    {
+      "id": "AUD-1792771048805-687c32",
+      "timestamp": "2026-10-23T15:57:28.805Z",
+      "caseId": "CASE-CONCURRENT-2-1792771048800",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-2-1792771048800'"
+    },
+    {
+      "id": "AUD-1792771048804-16ab2c",
+      "timestamp": "2026-10-23T15:57:28.804Z",
+      "caseId": "CASE-CONCURRENT-1-1792771048799",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-1-1792771048799'"
+    },
+    {
+      "id": "AUD-1792771048804-eaa01b",
+      "timestamp": "2026-10-23T15:57:28.804Z",
+      "caseId": "CASE-CONCURRENT-0-1792771048798",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-0-1792771048798'"
+    },
+    {
+      "id": "AUD-1792771048803-c3a42d",
+      "timestamp": "2026-10-23T15:57:28.803Z",
+      "caseId": "CASE-CONCURRENT-9-1792771048802",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-9-1792771048802' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771048801-55b42d",
+      "timestamp": "2026-10-23T15:57:28.802Z",
+      "caseId": "CASE-CONCURRENT-8-1792771048801",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-8-1792771048801' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771048801-64e1d7",
+      "timestamp": "2026-10-23T15:57:28.801Z",
+      "caseId": "CASE-CONCURRENT-7-1792771048801",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-7-1792771048801' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771048801-864465",
+      "timestamp": "2026-10-23T15:57:28.801Z",
+      "caseId": "CASE-CONCURRENT-6-1792771048801",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-6-1792771048801' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771048801-8f53cb",
+      "timestamp": "2026-10-23T15:57:28.801Z",
+      "caseId": "CASE-CONCURRENT-5-1792771048800",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-5-1792771048800' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771048800-4e39a9",
+      "timestamp": "2026-10-23T15:57:28.800Z",
+      "caseId": "CASE-CONCURRENT-4-1792771048800",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-4-1792771048800' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771048800-74f96d",
+      "timestamp": "2026-10-23T15:57:28.800Z",
+      "caseId": "CASE-CONCURRENT-3-1792771048800",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-3-1792771048800' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771048800-eafc41",
+      "timestamp": "2026-10-23T15:57:28.800Z",
+      "caseId": "CASE-CONCURRENT-2-1792771048800",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-2-1792771048800' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771048800-d5ec7e",
+      "timestamp": "2026-10-23T15:57:28.800Z",
+      "caseId": "CASE-CONCURRENT-1-1792771048799",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-1-1792771048799' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771048799-5062b6",
+      "timestamp": "2026-10-23T15:57:28.799Z",
+      "caseId": "CASE-CONCURRENT-0-1792771048798",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-0-1792771048798' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771047180-9dc376",
+      "timestamp": "2026-10-23T15:57:27.180Z",
+      "caseId": "CASE-TEST-1792771047167",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-TEST-1792771047167'"
+    },
+    {
+      "id": "AUD-1792771047176-fe2273",
+      "timestamp": "2026-10-23T15:57:27.176Z",
+      "caseId": "CASE-TEST-1792771047167",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-TEST-1792771047167' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792771024416-c253ba",
+      "timestamp": "2026-10-23T15:57:04.416Z",
+      "caseId": "CASE-CONCURRENT-9-1792771024414",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-9-1792771024414'"
+    },
+    {
+      "id": "AUD-1792771024416-4c3fae",
+      "timestamp": "2026-10-23T15:57:04.416Z",
+      "caseId": "CASE-CONCURRENT-8-1792771024414",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-8-1792771024414'"
+    },
+    {
+      "id": "AUD-1792771024416-7091ca",
+      "timestamp": "2026-10-23T15:57:04.416Z",
+      "caseId": "CASE-CONCURRENT-7-1792771024414",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-7-1792771024414'"
+    },
+    {
+      "id": "AUD-1792771024415-c03ca1",
+      "timestamp": "2026-10-23T15:57:04.415Z",
+      "caseId": "CASE-CONCURRENT-6-1792771024414",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-6-1792771024414'"
+    },
+    {
+      "id": "AUD-1792771024415-7e6ab4",
+      "timestamp": "2026-10-23T15:57:04.415Z",
+      "caseId": "CASE-CONCURRENT-5-1792771024414",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-5-1792771024414'"
+    },
+    {
+      "id": "AUD-1792771024415-b6c7bd",
+      "timestamp": "2026-10-23T15:57:04.415Z",
+      "caseId": "CASE-CONCURRENT-4-1792771024413",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-4-1792771024413'"
+    },
+    {
+      "id": "AUD-1792771024415-e8d957",
+      "timestamp": "2026-10-23T15:57:04.415Z",
+      "caseId": "CASE-CONCURRENT-3-1792771024413",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-3-1792771024413'"
+    },
+    {
+      "id": "AUD-1792771024415-b371d3",
+      "timestamp": "2026-10-23T15:57:04.415Z",
+      "caseId": "CASE-CONCURRENT-2-1792771024413",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-2-1792771024413'"
+    },
+    {
+      "id": "AUD-1792771024415-36635a",
+      "timestamp": "2026-10-23T15:57:04.415Z",
+      "caseId": "CASE-CONCURRENT-1-1792771024413",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-1-1792771024413'"
+    },
+    {
+      "id": "AUD-1792771024415-c1a42a",
+      "timestamp": "2026-10-23T15:57:04.415Z",
+      "caseId": "CASE-CONCURRENT-0-1792771024412",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-0-1792771024412'"
+    },
+    {
+      "id": "AUD-1792771024414-033e96",
+      "timestamp": "2026-10-23T15:57:04.414Z",
+      "caseId": "CASE-CONCURRENT-9-1792771024414",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-9-1792771024414' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771024414-28137f",
+      "timestamp": "2026-10-23T15:57:04.414Z",
+      "caseId": "CASE-CONCURRENT-8-1792771024414",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-8-1792771024414' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771024414-f80412",
+      "timestamp": "2026-10-23T15:57:04.414Z",
+      "caseId": "CASE-CONCURRENT-7-1792771024414",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-7-1792771024414' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771024414-0a1ec1",
+      "timestamp": "2026-10-23T15:57:04.414Z",
+      "caseId": "CASE-CONCURRENT-6-1792771024414",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-6-1792771024414' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771024414-61e645",
+      "timestamp": "2026-10-23T15:57:04.414Z",
+      "caseId": "CASE-CONCURRENT-5-1792771024414",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-5-1792771024414' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771024413-0529a9",
+      "timestamp": "2026-10-23T15:57:04.414Z",
+      "caseId": "CASE-CONCURRENT-4-1792771024413",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-4-1792771024413' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771024413-92d3f5",
+      "timestamp": "2026-10-23T15:57:04.413Z",
+      "caseId": "CASE-CONCURRENT-3-1792771024413",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-3-1792771024413' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771024413-c25a86",
+      "timestamp": "2026-10-23T15:57:04.413Z",
+      "caseId": "CASE-CONCURRENT-2-1792771024413",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-2-1792771024413' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771024413-419115",
+      "timestamp": "2026-10-23T15:57:04.413Z",
+      "caseId": "CASE-CONCURRENT-1-1792771024413",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-1-1792771024413' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771024413-0ebc91",
+      "timestamp": "2026-10-23T15:57:04.413Z",
+      "caseId": "CASE-CONCURRENT-0-1792771024412",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-0-1792771024412' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792771022819-38bbca",
+      "timestamp": "2026-10-23T15:57:02.819Z",
+      "caseId": "CASE-TEST-1792771022807",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-TEST-1792771022807'"
+    },
+    {
+      "id": "AUD-1792771022815-42a7f9",
+      "timestamp": "2026-10-23T15:57:02.816Z",
+      "caseId": "CASE-TEST-1792771022807",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-TEST-1792771022807' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792770978738-15e7c4",
+      "timestamp": "2026-10-23T15:56:18.738Z",
+      "caseId": "CASE-CONCURRENT-9-1792770978736",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-9-1792770978736'"
+    },
+    {
+      "id": "AUD-1792770978738-40ce07",
+      "timestamp": "2026-10-23T15:56:18.738Z",
+      "caseId": "CASE-CONCURRENT-8-1792770978736",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-8-1792770978736'"
+    },
+    {
+      "id": "AUD-1792770978738-f141ef",
+      "timestamp": "2026-10-23T15:56:18.738Z",
+      "caseId": "CASE-CONCURRENT-7-1792770978736",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-7-1792770978736'"
+    },
+    {
+      "id": "AUD-1792770978738-1658fd",
+      "timestamp": "2026-10-23T15:56:18.738Z",
+      "caseId": "CASE-CONCURRENT-6-1792770978736",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-6-1792770978736'"
+    },
+    {
+      "id": "AUD-1792770978738-f0b06d",
+      "timestamp": "2026-10-23T15:56:18.738Z",
+      "caseId": "CASE-CONCURRENT-5-1792770978736",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-5-1792770978736'"
+    },
+    {
+      "id": "AUD-1792770978738-9ca918",
+      "timestamp": "2026-10-23T15:56:18.738Z",
+      "caseId": "CASE-CONCURRENT-4-1792770978736",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-4-1792770978736'"
+    },
+    {
+      "id": "AUD-1792770978738-eba876",
+      "timestamp": "2026-10-23T15:56:18.738Z",
+      "caseId": "CASE-CONCURRENT-3-1792770978736",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-3-1792770978736'"
+    },
+    {
+      "id": "AUD-1792770978738-75d3d4",
+      "timestamp": "2026-10-23T15:56:18.738Z",
+      "caseId": "CASE-CONCURRENT-2-1792770978735",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-2-1792770978735'"
+    },
+    {
+      "id": "AUD-1792770978737-4589a2",
+      "timestamp": "2026-10-23T15:56:18.737Z",
+      "caseId": "CASE-CONCURRENT-1-1792770978735",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-1-1792770978735'"
+    },
+    {
+      "id": "AUD-1792770978737-71a9ff",
+      "timestamp": "2026-10-23T15:56:18.737Z",
+      "caseId": "CASE-CONCURRENT-0-1792770978734",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-CONCURRENT-0-1792770978734'"
+    },
+    {
+      "id": "AUD-1792770978736-348691",
+      "timestamp": "2026-10-23T15:56:18.736Z",
+      "caseId": "CASE-CONCURRENT-9-1792770978736",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-9-1792770978736' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792770978736-5d3a4a",
+      "timestamp": "2026-10-23T15:56:18.736Z",
+      "caseId": "CASE-CONCURRENT-8-1792770978736",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-8-1792770978736' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792770978736-389cee",
+      "timestamp": "2026-10-23T15:56:18.736Z",
+      "caseId": "CASE-CONCURRENT-7-1792770978736",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-7-1792770978736' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792770978736-e9a4c0",
+      "timestamp": "2026-10-23T15:56:18.736Z",
+      "caseId": "CASE-CONCURRENT-6-1792770978736",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-6-1792770978736' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792770978736-ec9b12",
+      "timestamp": "2026-10-23T15:56:18.736Z",
+      "caseId": "CASE-CONCURRENT-5-1792770978736",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-5-1792770978736' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792770978736-dc01c1",
+      "timestamp": "2026-10-23T15:56:18.736Z",
+      "caseId": "CASE-CONCURRENT-4-1792770978736",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-4-1792770978736' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792770978736-6c7071",
+      "timestamp": "2026-10-23T15:56:18.736Z",
+      "caseId": "CASE-CONCURRENT-3-1792770978736",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-3-1792770978736' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792770978736-4c5a3a",
+      "timestamp": "2026-10-23T15:56:18.736Z",
+      "caseId": "CASE-CONCURRENT-2-1792770978735",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-2-1792770978735' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792770978735-4d1065",
+      "timestamp": "2026-10-23T15:56:18.735Z",
+      "caseId": "CASE-CONCURRENT-1-1792770978735",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-1-1792770978735' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792770978735-b092bf",
+      "timestamp": "2026-10-23T15:56:18.735Z",
+      "caseId": "CASE-CONCURRENT-0-1792770978734",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-CONCURRENT-0-1792770978734' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792770976755-3a2bf5",
+      "timestamp": "2026-10-23T15:56:16.755Z",
+      "caseId": "CASE-TEST-1792770976743",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-TEST-1792770976743'"
+    },
+    {
+      "id": "AUD-1792770976750-03ca8c",
+      "timestamp": "2026-10-23T15:56:16.750Z",
+      "caseId": "CASE-TEST-1792770976743",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-TEST-1792770976743' with risk level HIGH"
+    },
+    {
+      "id": "AUD-1792769297697-yrsj",
+      "timestamp": "2026-10-23T15:28:17.697Z",
+      "caseId": "INV-MVL4JO1E-CB4M",
+      "toolName": "verify_action",
+      "action": "Action Read-Back Verification",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Verification confirmed: Record 'INV-MVL4JO1E-CB4M' exists, schema validates, and SHA-256 payload integrity check passed (304ff40b9cf4...)."
+    },
+    {
+      "id": "AUD-1792769297696-1lne",
+      "timestamp": "2026-10-23T15:28:17.696Z",
+      "caseId": "INV-MVL4JO1E-CB4M",
+      "toolName": "save_investigation",
+      "action": "Persistence to Database",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Persisted case 'INV-MVL4JO1E-CB4M' with SHA-256 integrity hash 304ff40b9c..."
+    },
+    {
+      "id": "AUD-1792769297696-riyi",
+      "timestamp": "2026-10-23T15:28:17.696Z",
+      "caseId": "INV-MVL4JO1E-CB4M",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'INV-MVL4JO1E-CB4M' with risk level CRITICAL"
+    },
+    {
+      "id": "AUD-1792769297695-fu43",
+      "timestamp": "2026-10-23T15:28:17.695Z",
+      "caseId": "INV-MVL4JO1E-CB4M",
+      "toolName": "prepare_incident_report",
+      "action": "Incident Report Compilation",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Compiled incident report REP-MVL4JVA6-DQ3W with full XSS escaping and export capabilities"
+    },
+    {
+      "id": "AUD-1792769297694-vjjo",
+      "timestamp": "2026-10-23T15:28:17.694Z",
+      "caseId": "INV-MVL4JO1E-CB4M",
+      "toolName": "create_safety_plan",
+      "action": "Defensive Guidance & Action Planning",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Generated directive: \"DO NOT reply, click links, or provide financial/credential info. Disconnect communication immediately.\" with 4 prioritized action items and 4 reporting endpoints"
+    },
+    {
+      "id": "AUD-1792769297693-1c37",
+      "timestamp": "2026-10-23T15:28:17.693Z",
+      "caseId": "INV-MVL4JO1E-CB4M",
+      "toolName": "assess_evidence",
+      "action": "Evidence Synthesis & Risk Assessment",
+      "outcome": "SUCCESS",
+      "durationMs": 0,
+      "details": "Calculated Risk: CRITICAL (Score: 100/100, Evidence: STRONG, Uncertainty: LOW)"
+    },
+    {
+      "id": "AUD-1792769297693-n301",
+      "timestamp": "2026-10-23T15:28:17.693Z",
+      "caseId": "INV-MVL4JO1E-CB4M",
+      "toolName": "inspect_url",
+      "action": "URL Structure & Lookalike Domain Inspection",
+      "outcome": "SUCCESS",
+      "durationMs": 1,
+      "details": "Inspected 1 URLs. Identified 1 lookalike/deceptive domains. Zero network requests made (SSRF-protected)."
+    },
+    {
+      "id": "AUD-1792769297691-9l0z",
+      "timestamp": "2026-10-23T15:28:17.691Z",
+      "caseId": "INV-MVL4JO1E-CB4M",
+      "toolName": "analyze_message",
+      "action": "Linguistic & Entity Extraction",
+      "outcome": "SUCCESS",
+      "durationMs": 9385,
+      "details": "Extracted 0 URLs, 0 payment keywords, 2 credential tokens (Engine: Deterministic Heuristic)"
+    },
+    {
+      "id": "AUD-1792769261991-d3ip",
+      "timestamp": "2026-10-23T15:27:41.991Z",
+      "caseId": "CASE-TAMPER-TEST",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-TAMPER-TEST'"
+    },
+    {
+      "id": "AUD-1792769261991-cuk1",
+      "timestamp": "2026-10-23T15:27:41.991Z",
+      "caseId": "CASE-TAMPER-TEST",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-TAMPER-TEST' with risk level LOW"
+    },
+    {
+      "id": "AUD-1792769260055-ogjj",
+      "timestamp": "2026-10-23T15:27:40.055Z",
+      "caseId": "CASE-TEST-1792769260046",
+      "toolName": "delete_investigation",
+      "action": "DELETE_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 3,
+      "details": "Purged case record 'CASE-TEST-1792769260046'"
+    },
+    {
+      "id": "AUD-1792769260052-oozr",
+      "timestamp": "2026-10-23T15:27:40.052Z",
+      "caseId": "CASE-TEST-1792769260046",
+      "toolName": "save_investigation",
+      "action": "PERSIST_INVESTIGATION_CASE",
+      "outcome": "SUCCESS",
+      "durationMs": 4,
+      "details": "Saved case 'CASE-TEST-1792769260046' with risk level HIGH"
+    }
+  ]
+}

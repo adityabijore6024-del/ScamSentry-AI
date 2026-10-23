@@ -1,0 +1,8 @@
+{
+  "name": "ScamSentry AI",
+  "description": "Evidence-driven agentic fraud investigation platform and Model Context Protocol (MCP) server for investigating phishing, fake job offers, impersonation, and payment scams.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
